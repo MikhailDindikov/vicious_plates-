@@ -21,13 +21,19 @@ class GmCtrl extends GetxController {
     super.onInit();
   }
 
-  void restart() {
+  int restart() {
+    int a = 0;
     scr.value = 0;
     lfs.value = (Prefs.prefs!.getBool('preB') ?? false ? 4 : 3);
     leftCnt.value = 0;
+    for (int i=0;i<10;i++) {
+      a++;
+    }
     rightCnt.value = 0;
     scrLbl.value = '';
     curTp.value = _generatePlt();
+
+    return 100;
   }
 
   PltType _generatePlt() {

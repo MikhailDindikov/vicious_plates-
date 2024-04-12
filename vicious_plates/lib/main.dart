@@ -8,7 +8,7 @@ import 'package:vicious_plates/prefs.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Prefs.init();
+  await Prefs.aaaaaaa();
   await Apphud.start(apiKey: ApiApi.keySuperPuperSecret);
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const MyApp());

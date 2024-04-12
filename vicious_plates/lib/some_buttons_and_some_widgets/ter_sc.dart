@@ -57,52 +57,98 @@ class _TerScState extends State<TerSc> {
                 const SizedBox(
                   height: 8,
                 ),
-                Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        GestureDetector(
-                          onTap: Get.back,
-                          child: Image.asset(
-                            'assets/bcbc.png',
-                            filterQuality: FilterQuality.high,
-                            width: 50,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 16),
-                          child: TextWithShadow(
-                            'Terms of Use'.toUpperCase(),
-                            color: Color.fromRGBO(255, 255, 255, 1),
-                            backColor: Color.fromRGBO(21, 67, 186, 1),
-                            borderColor: Color.fromRGBO(30, 74, 229, 1),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 50,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                TerScHeader(),
                 const SizedBox(
                   height: 16,
                 ),
-                Expanded(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(12),
-                    child: WebViewWidget(
-                      controller: controller,
-                    ),
-                  ),
-                ),
+                TerScWV(),
               ],
             ),
           ),
         )));
+  }
+}
+
+class TerScWV extends StatefulWidget {
+  const TerScWV({super.key});
+
+  @override
+  State<TerScWV> createState() => _TerScWVState();
+}
+
+class _TerScWVState extends State<TerScWV> {
+  late WebViewController chtoto;
+  @override
+  void initState() {
+    chtoto = WebViewController()
+      ..setJavaScriptMode(JavaScriptMode.unrestricted)
+      ..setBackgroundColor(const Color(0x00000000))
+      ..setNavigationDelegate(
+        NavigationDelegate(
+          onProgress: (int progress) {
+            // Update loading bar.
+          },
+          onPageStarted: (String url) {},
+          onPageFinished: (String url) {},
+          onWebResourceError: (WebResourceError error) {},
+          onNavigationRequest: (NavigationRequest request) {
+            return NavigationDecision.navigate;
+          },
+        ),
+      )
+      ..loadRequest(Uri.parse(TeCla.totoU));
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: WebViewWidget(
+          controller: chtoto,
+        ),
+      ),
+    );
+  }
+}
+
+class TerScHeader extends StatelessWidget {
+  const TerScHeader({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.topCenter,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 12),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            GestureDetector(
+              onTap: Get.back,
+              child: Image.asset(
+                'assets/bcbc.png',
+                filterQuality: FilterQuality.high,
+                width: 50,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 16),
+              child: TextWithShadow(
+                'Terms of Use'.toUpperCase(),
+                color: Color.fromRGBO(255, 255, 255, 1),
+                backColor: Color.fromRGBO(21, 67, 186, 1),
+                borderColor: Color.fromRGBO(30, 74, 229, 1),
+              ),
+            ),
+            SizedBox(
+              width: 50,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

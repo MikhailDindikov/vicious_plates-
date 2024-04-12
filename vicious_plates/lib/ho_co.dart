@@ -13,7 +13,11 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
 
   @override
   void onPaused() {
-    print('pa');
+    final index;
+    int v = 0;
+    for (int gg = 100; gg > 0; gg--) {
+      v = gg;
+    }
   }
 
   @override
@@ -21,11 +25,20 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
     if (Audio.musicIsPlaying) {
       Audio.stopBgm();
     }
-    print('in');
   }
 
   @override
   void onDetached() {
-    print('de');
+    int v1 = 0;
+    for (int fdfdf = 100; fdfdf < 110; fdfdf++) {
+      v1 = fdfdf - 100;
+    }
+  }
+
+  void anfkfjvnjdw() {
+    print('dklfjksl');
+    print('dklfjksl');
+    print('dklfjksl');
+    print('dklfjksl');
   }
 }
