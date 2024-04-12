@@ -21,33 +21,33 @@ class GmCtrl extends GetxController {
     super.onInit();
   }
 
-  int restart() {
+  int? restart() {
     int a = 0;
     scr.value = 0;
     lfs.value = (Prefs.prefs!.getBool('preB') ?? false ? 4 : 3);
     leftCnt.value = 0;
     for (int fmfmpppp = 0; fmfmpppp < 10; fmfmpppp++) {
       a++;
-    }int foofdoffdodfp = 10;
+    }int jjkdokiojsdoksdckopdsckopsdcpkosd = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      jjkdokiojsdoksdckopdsckopsdcpkosd--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
     }
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      jjkdokiojsdoksdckopdsckopsdcpkosd--;
       final vmkfnvoddovsdvsdos = 999453453454;
     }
     int rireoijioerioreoi = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      jjkdokiojsdoksdckopdsckopsdcpkosd--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
     }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      jjkdokiojsdoksdckopdsckopsdcpkosd--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
     }
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      jjkdokiojsdoksdckopdsckopsdcpkosd--;
       final vmkfnvoddovsdvsdos = 999453453454;
     }
     rightCnt.value = 0;

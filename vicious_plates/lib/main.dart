@@ -4,55 +4,63 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:vicious_plates/apiapi.dart';
 import 'package:vicious_plates/glavni_screen.dart';
+import 'package:vicious_plates/ho_co.dart';
 import 'package:vicious_plates/prefs.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Prefs.aaaaaaa();int foofdoffdodfp = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      final vmkfnvoddovsdvsdos = 999453453454;
-    }
-    int rireoijioerioreoi = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      final vmkfnvoddovsdvsdos = 999453453454;
-    }
-  await Apphud.start(apiKey: ApiApi.keySuperPuperSecret);int fooffsdfsdfdoffdodfp = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      final vmkfnvoddovsdvsdos = 999453453454;
-    }
-    int rireoijiodfsdferioreoi = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }int dfsdsdfdsfdsdfsdfssdfsdfsddsfsdfsdfsdf = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      final vmkfnvoddovsdvsdos = 999453453454;
-    }
+  HoCo.fnjkdkddk();
+  await Prefs.aaaaaaa();
+  int khjvojdfnhdfvhdvffvdhjvfvdffvn = 10;
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+  }
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    final vmkfnvoddovsdvsdos = 999453453454;
+  }
+  int rireoijioerioreoi = 10;
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+  }
+  int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+  }
+  for (int fcrefefrefeerf = 100; fcrefefrefeerf > 90; fcrefefrefeerf--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    final vmkfnvoddovsdvsdos = 999453453454;
+  }
+  await Apphud.start(apiKey: ApiApi.keySuperPuperSecret);
+  int fooffsdfsdfdoffdodfp = 10;
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+  }
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    final vmkfnvoddovsdvsdos = 999453453454;
+  }
+  int rireoijiodfsdferioreoi = 10;
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+  }
+  int dfsdsdfdsfdsdfsdfssdfsdfsddsfsdfsdfsdf = 10;
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+  }
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    khjvojdfnhdfvhdvffvdhjvfvdffvn--;
+    final vmkfnvoddovsdvsdos = 999453453454;
+  }
+  HoCo.fnjkdkddk();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  HoCo.fnjkdkddk();
   runApp(const MyApp());
 }
 

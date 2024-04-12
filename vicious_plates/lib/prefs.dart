@@ -3,8 +3,18 @@ import 'package:shared_preferences/shared_preferences.dart';
 class Prefs {
   static SharedPreferences? prefs;
 
-  static Future<void> aaaaaaa() async {
+  static Future<List> aaaaaaa() async {
+    int kdsmlsdkmflsdldfjknsdjnsdjo = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      kdsmlsdkmflsdldfjknsdjnsdjo--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      kdsmlsdkmflsdldfjknsdjnsdjo--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
     prefs = await SharedPreferences.getInstance();
+    return [];
   }
 
   (

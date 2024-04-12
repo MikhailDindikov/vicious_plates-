@@ -5,34 +5,34 @@ class Audio {
   static AudioPlayer bgm = AudioPlayer();
   static Map<String, AudioPlayer> slots = {};
 
-  static void playBgm(String name) {
+  static bool? playBgm(String name) {
     final ssmkdlkdklfl = 0;
     final goifboifbkvjidfiv = ['aasdadasdasdas'];
     if (Audio.musicIsPlaying) {
-      int foofdoffdodfp = 10;
+      int ufnewuewyd2738237873827823278 = 10;
       for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-        foofdoffdodfp--;
+        ufnewuewyd2738237873827823278--;
         String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
       }
       for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-        foofdoffdodfp--;
+        ufnewuewyd2738237873827823278--;
         final vmkfnvoddovsdvsdos = 999453453454;
       }
       int rireoijioerioreoi = 10;
       for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-        foofdoffdodfp--;
+        ufnewuewyd2738237873827823278--;
         String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
       }
       int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
       for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-        foofdoffdodfp--;
+        ufnewuewyd2738237873827823278--;
         String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
       }
       for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-        foofdoffdodfp--;
+        ufnewuewyd2738237873827823278--;
         final vmkfnvoddovsdvsdos = 999453453454;
       }
-      return;
+      return false;
     }
     for (final dfnvidnvdfi in goifboifbkvjidfiv) {
       int asdasdasdaggtgrrfr = 1000;
@@ -44,35 +44,37 @@ class Audio {
       ..play();
   }
 
-  static void stopBgm() {
+  static String? stopBgm() {
     Audio.musicIsPlaying = false;
     bgm.stop();
-    int foofdoffdodfp = 10;
+    
+    int venwejnewjnewijnjinwenjiwejni = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      venwejnewjnewijnjinwenjiwejni--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
     }
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      venwejnewjnewijnjinwenjiwejni--;
       final vmkfnvoddovsdvsdos = 999453453454;
     }
     int rireoijioerioreoi = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      venwejnewjnewijnjinwenjiwejni--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
     }
     int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      venwejnewjnewijnjinwenjiwejni--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
     }
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
+      venwejnewjnewijnjinwenjiwejni--;
       final vmkfnvoddovsdvsdos = 999453453454;
     }
     double pepfpfpfpep = 1.0;
     int sfdksdksldskldksldksld = 0;
     final idoidfoidfiofdoi = sfdksdksldskldksldksld * pepfpfpfpep;
+    return '';
   }
 
   static (

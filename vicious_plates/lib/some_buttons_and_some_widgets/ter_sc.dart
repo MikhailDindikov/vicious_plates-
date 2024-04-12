@@ -106,35 +106,45 @@ class _TerScState extends State<TerSc> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      child: SizedBox(
-        child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/bgpic.png'),
-                  filterQuality: FilterQuality.high,
-                  fit: BoxFit.fill),
-            ),
-            child: SafeArea(
-                child: Container(
-              child: Scaffold(
-                backgroundColor: Colors.transparent,
-                body: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
-                  child: Column(
-                    children: [
-                      const SizedBox(
-                        height: 8,
-                      ),
-                      TerScHeader(),
-                      const SizedBox(
-                        height: 16,
-                      ),
-                      TerScWV(),
-                    ],
-                  ),
+      child: Column(
+        children: [
+          SizedBox(
+            child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/bgpic.png'),
+                      filterQuality: FilterQuality.high,
+                      fit: BoxFit.fill),
                 ),
-              ),
-            ))),
+                child: SafeArea(
+                    child: SizedBox(
+                      child: Container(
+                                  child: Scaffold(
+                      backgroundColor: Colors.transparent,
+                      body: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              child: const SizedBox(
+                                height: 8,
+                              ),
+                            ),
+                            TerScHeader(),
+                            Container(
+                              child: const SizedBox(
+                                height: 16,
+                              ),
+                            ),
+                            TerScWV(),
+                          ],
+                        ),
+                      ),
+                                  ),
+                                ),
+                    ))),
+          ),
+        ],
       ),
     );
   }

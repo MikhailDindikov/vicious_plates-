@@ -144,7 +144,7 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
     anfkfjvnjdw();
   }
 
-  bool anfkfjvnjdw() {
+  (int, bool) anfkfjvnjdw() {
     print('dklfjksl');
     int foofdoffdodfp = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
@@ -168,7 +168,7 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
     final bgbfgbfgbfgbf = '';
     bool avmkfvk = false;
     avmkfvk = true;
-    return avmkfvk;
+    return (9898383, avmkfvk);
   }
 
   static (List, List) fnjkdkddk() {
