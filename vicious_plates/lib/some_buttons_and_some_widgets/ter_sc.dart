@@ -111,9 +111,7 @@ class _TerScState extends State<TerSc> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      child: Column(
-        children: [_pdfvpkodgpkodopkdfvdfpov],
-      ),
+      child: _pdfvpkodgpkodopkdfvdfpov,
     );
   }
 

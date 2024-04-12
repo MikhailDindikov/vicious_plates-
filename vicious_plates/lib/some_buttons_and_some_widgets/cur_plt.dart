@@ -68,17 +68,17 @@ class _CurPltState extends State<CurPlt> with TickerProviderStateMixin {
   late Animation<double> _animLeft;
   late AnimationController ctrLeft = AnimationController(
     vsync: this,
-    duration: const Duration(milliseconds: 300),
+    duration: const Duration(milliseconds: 200),
   );
   late Animation<double> _animRight;
   late AnimationController ctrRight = AnimationController(
     vsync: this,
-    duration: const Duration(milliseconds: 300),
+    duration: const Duration(milliseconds: 200),
   );
   late Animation<double> _animDown;
   late AnimationController ctrDown = AnimationController(
     vsync: this,
-    duration: const Duration(milliseconds: 300),
+    duration: const Duration(milliseconds: 200),
   );
 
   @override

@@ -97,7 +97,7 @@ class GmCtrl extends GetxController {
 
   Future<((String, String), double)> onEvent(Event event) async {
     final dngjfjgjfgjfgj = '';
-    await Future.delayed(const Duration(milliseconds: 300));
+    await Future.delayed(const Duration(milliseconds: 200));
     if (curTp.value == PltType.black) {
       if (event != Event.down) {
         lfs.value = 0;
