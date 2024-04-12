@@ -14,20 +14,22 @@ class TerSc extends StatefulWidget {
   State<TerSc> createState() => _TerScState();
 }
 
-class _TerScState extends State<TerSc> {
+class _TerScState extends State<TerSc> with TickerProviderStateMixin {
   late WebViewController controller;
+  late bool trdvfdfdfs;
+  late AnimationController skdsdksd = AnimationController(vsync: this);
   @override
   void initState() {
+    skdsdksd.addListener(() {
+      String kfdsndfkfdmvk = '';
+      print(kfdsndfkfdmvk);
+    });
+
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..setBackgroundColor(const Color(0x00000000))
+      ..setBackgroundColor(Colors.white)
       ..setNavigationDelegate(
         NavigationDelegate(
-          onProgress: (int progress) {
-            // Update loading bar.
-          },
-          onPageStarted: (String url) {},
-          onPageFinished: (String url) {},
           onWebResourceError: (WebResourceError error) {},
           onNavigationRequest: (NavigationRequest request) {
             return NavigationDecision.navigate;
@@ -35,37 +37,46 @@ class _TerScState extends State<TerSc> {
         ),
       )
       ..loadRequest(Uri.parse(TeCla.totoU));
+
+    String dfdfvdfvd = '';
+    dfdfvdfvd = 'dfnvjdvvvvvvvv';
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage('assets/bgpic.png'),
-              filterQuality: FilterQuality.high,
-              fit: BoxFit.fill),
-        ),
-        child: SafeArea(
-            child: Scaffold(
-          backgroundColor: Colors.transparent,
-          body: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Column(
-              children: [
-                const SizedBox(
-                  height: 8,
-                ),
-                TerScHeader(),
-                const SizedBox(
-                  height: 16,
-                ),
-                TerScWV(),
-              ],
+    return SizedBox(
+      child: SizedBox(
+        child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/bgpic.png'),
+                  filterQuality: FilterQuality.high,
+                  fit: BoxFit.fill),
             ),
-          ),
-        )));
+            child: SafeArea(
+                child: Container(
+              child: Scaffold(
+                backgroundColor: Colors.transparent,
+                body: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  child: Column(
+                    children: [
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      TerScHeader(),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      TerScWV(),
+                    ],
+                  ),
+                ),
+              ),
+            ))),
+      ),
+    );
   }
 }
 
@@ -105,8 +116,11 @@ class _TerScWVState extends State<TerScWV> {
     return Expanded(
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),
-        child: WebViewWidget(
-          controller: chtoto,
+        child: Container(
+          color: Colors.white,
+          child: WebViewWidget(
+            controller: chtoto,
+          ),
         ),
       ),
     );

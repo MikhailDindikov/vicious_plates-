@@ -6,8 +6,13 @@ class Audio {
   static Map<String, AudioPlayer> slots = {};
 
   static void playBgm(String name) {
+    final ssmkdlkdklfl = 0;
+    final goifboifbkvjidfiv = ['aasdadasdasdas'];
     if (Audio.musicIsPlaying) {
       return;
+    }
+    for (final dfnvidnvdfi in goifboifbkvjidfiv) {
+      int asdasdasdaggtgrrfr = 1000;
     }
     Audio.musicIsPlaying = true;
     bgm
@@ -19,5 +24,8 @@ class Audio {
   static void stopBgm() {
     Audio.musicIsPlaying = false;
     bgm.stop();
+    double pepfpfpfpep = 1.0;
+    int sfdksdksldskldksldksld = 0;
+    final idoidfoidfiofdoi = sfdksdksldskldksldksld * pepfpfpfpep;
   }
 }

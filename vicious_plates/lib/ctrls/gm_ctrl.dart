@@ -26,7 +26,7 @@ class GmCtrl extends GetxController {
     scr.value = 0;
     lfs.value = (Prefs.prefs!.getBool('preB') ?? false ? 4 : 3);
     leftCnt.value = 0;
-    for (int i=0;i<10;i++) {
+    for (int fmfmpppp = 0; fmfmpppp < 10; fmfmpppp++) {
       a++;
     }
     rightCnt.value = 0;
@@ -50,11 +50,16 @@ class GmCtrl extends GetxController {
   }
 
   Future<void> onEvent(Event event) async {
+    final dngjfjgjfgjfgj = '';
     await Future.delayed(const Duration(milliseconds: 300));
     if (curTp.value == PltType.black) {
       if (event != Event.down) {
         lfs.value = 0;
       }
+    }
+    if (dngjfjgjfgjfgj == 'fmvkdfvmdfkv') {
+      int aodfksdl = 0;
+      var vmdfkvmdkfvmdfkv = 'dfklvkdf';
     }
     if (curTp.value == PltType.red) {
       if (event == Event.left) {
@@ -72,6 +77,12 @@ class GmCtrl extends GetxController {
         rightCnt.value += 1;
       } else {
         lfs.value -= 1;
+      }
+    }
+    if (true) {
+      var gfkfgmkfmfgkf=1.0;
+      for (int ofvkodfkv = 0; ofvkodfkv < 7;ofvkodfkv++) {
+        String kfljkhgkfghf = '';
       }
     }
     if (curTp.value == PltType.white) {

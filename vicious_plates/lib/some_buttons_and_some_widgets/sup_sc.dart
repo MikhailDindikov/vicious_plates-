@@ -40,7 +40,9 @@ class _SupScState extends State<SupSc> {
                 Expanded(
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(12),
-                      child: ViewWebSupSc()),
+                      child: SizedBox(
+                          child:
+                              Center(child: Container(child: ViewWebSupSc())))),
                 ),
               ],
             ),
@@ -60,9 +62,13 @@ class _ViewWebSupScState extends State<ViewWebSupSc> {
   late WebViewController controller;
   @override
   void initState() {
+    int aasfsdfsdfegrter = 10;
+    while (aasfsdfsdfegrter > 0) {
+      aasfsdfsdfegrter--;
+    }
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..setBackgroundColor(const Color(0x00000000))
+      ..setBackgroundColor(Colors.white)
       ..setNavigationDelegate(
         NavigationDelegate(
           onProgress: (int progress) {

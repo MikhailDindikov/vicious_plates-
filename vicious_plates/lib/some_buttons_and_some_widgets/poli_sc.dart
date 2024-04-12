@@ -24,35 +24,41 @@ class _PoliScState extends State<PoliSc> {
               filterQuality: FilterQuality.high,
               fit: BoxFit.fill),
         ),
-        child: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.zero,
+          child: SafeArea(
+              child: SizedBox(
             child: Scaffold(
-          backgroundColor: Colors.transparent,
-          body: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Column(
-              children: [
-                const SizedBox(
-                  height: 8,
-                ),
-                PoliScGolova(),
-                const SizedBox(
-                  height: 16,
-                  child: SizedBox(
-                    child: SizedBox(
-                      child: SizedBox(),
+              backgroundColor: Colors.transparent,
+              body: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 8,
+                      child: Container(),
                     ),
-                  ),
+                    PoliScGolova(),
+                    const SizedBox(
+                      height: 16,
+                      child: SizedBox(
+                        child: SizedBox(
+                          child: SizedBox(),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: PoliScWW(),
+                      ),
+                    ),
+                  ],
                 ),
-                Expanded(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(12),
-                    child: PoliScWW(),
-                  ),
-                ),
-              ],
+              ),
             ),
-          ),
-        )));
+          )),
+        ));
   }
 }
 
@@ -107,9 +113,17 @@ class _PoliScWWState extends State<PoliScWW> {
   late WebViewController controller;
   @override
   void initState() {
+    String odgfkjbdkvmdfl ='';
+    String odgfkjbdkdfdvmdfl ='';
+    String odgfkjbdfdvskvmdfl ='';
+    String vccvcvcvxscvaa ='';
+    String odgfkjbdxckvmdfl ='';
+    String odgfkjbdxxxkvmdfl ='';
+    String odgfkjcxbdkvmdfl ='';
+    String odgfkjbcvtgttdkvmdfl ='';
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..setBackgroundColor(const Color(0x00000000))
+      ..setBackgroundColor( Colors.white)
       ..setNavigationDelegate(
         NavigationDelegate(
           onProgress: (int progress) {
@@ -125,6 +139,11 @@ class _PoliScWWState extends State<PoliScWW> {
       )
       ..loadRequest(Uri.parse(PriCla.pritoU));
     super.initState();
+    int afkdvndkfvdklfvdlkmfv = 0;
+    var vlfdvmdflv = [];
+    for (final dnfkvndfkv in vlfdvmdflv) {
+      afkdvndkfvdklfvdlkmfv++;
+    }
   }
 
   @override
