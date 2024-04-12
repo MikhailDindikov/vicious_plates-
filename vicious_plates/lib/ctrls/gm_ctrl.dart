@@ -28,6 +28,27 @@ class GmCtrl extends GetxController {
     leftCnt.value = 0;
     for (int fmfmpppp = 0; fmfmpppp < 10; fmfmpppp++) {
       a++;
+    }int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
     }
     rightCnt.value = 0;
     scrLbl.value = '';
@@ -40,7 +61,28 @@ class GmCtrl extends GetxController {
     final val = random.nextInt(101);
     if (val < 60) {
       return PltType.white;
-    } else if (val < 75) {
+    } else if (val < 75) {int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
       return PltType.red;
     } else if (val < 90) {
       return PltType.blue;
@@ -56,6 +98,27 @@ class GmCtrl extends GetxController {
       if (event != Event.down) {
         lfs.value = 0;
       }
+    }int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
     }
     if (dngjfjgjfgjfgj == 'fmvkdfvmdfkv') {
       int aodfksdl = 0;

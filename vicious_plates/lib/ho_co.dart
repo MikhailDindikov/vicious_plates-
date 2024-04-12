@@ -12,6 +12,29 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
     var kjlgfjgfjkfgjkgjk = 1;
     kjlgfjgfjkfgjkgjk++;
     kjlgfjgfjkfgjkgjk++;
+    int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
     HoCo.fnjkdkddk();
     HoCo.fnjkdkddk();
     var lflflflf = '';
@@ -21,6 +44,29 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
   void onPaused() {
     final sdfsdfhfggfsdfd;
     int v = 0;
+    int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
     for (int gg = 100; gg > 0; gg--) {
       v = gg;
     }
@@ -33,6 +79,29 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
   void onInactive() {
     fnjkdkddk();
     fnjkdkddk();
+    int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
     if (Audio.musicIsPlaying) {
       Audio.stopBgm();
     }
@@ -41,6 +110,34 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
   @override
   void onDetached() {
     int v1 = 0;
+    int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int fdsugsdguysdugsfghghsdfghjsdfhgjsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
     for (int fdfdf = 100; fdfdf < 110; fdfdf++) {
       v1 = fdfdf - 100;
     }
@@ -49,6 +146,24 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
 
   bool anfkfjvnjdw() {
     print('dklfjksl');
+    int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
     const aaaaadddddaaaa = 1;
     final bgbfgbfgbfgbf = '';
     bool avmkfvk = false;

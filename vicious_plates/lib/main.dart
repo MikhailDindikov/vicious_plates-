@@ -8,8 +8,50 @@ import 'package:vicious_plates/prefs.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Prefs.aaaaaaa();
-  await Apphud.start(apiKey: ApiApi.keySuperPuperSecret);
+  await Prefs.aaaaaaa();int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+  await Apphud.start(apiKey: ApiApi.keySuperPuperSecret);int fooffsdfsdfdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijiodfsdferioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }int dfsdsdfdsfdsdfsdfssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const MyApp());
 }

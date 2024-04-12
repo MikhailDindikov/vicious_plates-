@@ -9,6 +9,29 @@ class Audio {
     final ssmkdlkdklfl = 0;
     final goifboifbkvjidfiv = ['aasdadasdasdas'];
     if (Audio.musicIsPlaying) {
+      int foofdoffdodfp = 10;
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+      }
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        final vmkfnvoddovsdvsdos = 999453453454;
+      }
+      int rireoijioerioreoi = 10;
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+      }
+      int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+      }
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        final vmkfnvoddovsdvsdos = 999453453454;
+      }
       return;
     }
     for (final dfnvidnvdfi in goifboifbkvjidfiv) {
@@ -24,6 +47,29 @@ class Audio {
   static void stopBgm() {
     Audio.musicIsPlaying = false;
     bgm.stop();
+    int foofdoffdodfp = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      foofdoffdodfp--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
     double pepfpfpfpep = 1.0;
     int sfdksdksldskldksldksld = 0;
     final idoidfoidfiofdoi = sfdksdksldskldksldksld * pepfpfpfpep;
