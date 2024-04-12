@@ -2,7 +2,7 @@ class PriCla {
   static const pritoU = 'https://docs.google.com/document/d/1gv-Qq6CjkYsc5wemYI5Ig-0RQDbE2q5wHdghPvquZG4/edit';
 }
 
- int iwqeoiqueqiorwetitevnvtnvcnwiwmrmermmrwmrwrwmrwemrewmrwtermetrmtym() {
+ double iwqeoiqueqiorwetitevnvtnvcnwiwmrmermmrwmrwrwmrwemrewmrwtermetrmtym() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -38,5 +38,5 @@ class PriCla {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return foofdoffdodfp;
+    return 3.333;
   }

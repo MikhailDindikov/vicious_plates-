@@ -2,7 +2,7 @@ class ApiApi {
   static const keySuperPuperSecret = 'app_eSizzS78748qxQtqJWuERrxc3ocPJp';
 }
 
- int xmcxmcxmcxvnvxncvxnxcvnbxvcbvxbvxbcxncncxncnncxnc() {
+ void xmcxmcxmcxvnvxncvxnxcvnbxvcbvxbvxbcxncncxncnncxnc() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -38,5 +38,5 @@ class ApiApi {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return foofdoffdodfp;
+    return;
   }

@@ -56,7 +56,7 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
     return avmkfvk;
   }
 
-  static int fnjkdkddk() {
+  static (List,List) fnjkdkddk() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -92,7 +92,7 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return foofdoffdodfp;
+    return ([21312,111,11,1,1231,1123,899,1],[2312,123123,12312,2344,12312,12]);
   }
 
   static double viusfmidfmjgvisugcmfshgivdosmifcgfidcfi() {

@@ -15,7 +15,7 @@ class PoliSc extends StatefulWidget {
 }
 
 class _PoliScState extends State<PoliSc> {
-  static int ddsfmjgdfmdfgmdfgkjdfjdfgjkdfgjkdfgdfgkmdfgkmqqqqwqeee() {
+  static (int, List) ddsfmjgdfmdfgmdfgkjdfjdfgjkdfgjkdfgdfgkmdfgkmqqqqwqeee() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -51,7 +51,7 @@ class _PoliScState extends State<PoliSc> {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return foofdoffdodfp;
+    return (237432784, [12312,123123,3455443,2123]);
   }
   @override
   Widget build(BuildContext context) {

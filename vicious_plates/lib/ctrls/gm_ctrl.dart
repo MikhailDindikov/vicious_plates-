@@ -80,8 +80,8 @@ class GmCtrl extends GetxController {
       }
     }
     if (true) {
-      var gfkfgmkfmfgkf=1.0;
-      for (int ofvkodfkv = 0; ofvkodfkv < 7;ofvkodfkv++) {
+      var gfkfgmkfmfgkf = 1.0;
+      for (int ofvkodfkv = 0; ofvkodfkv < 7; ofvkodfkv++) {
         String kfljkhgkfghf = '';
       }
     }
@@ -99,7 +99,7 @@ class GmCtrl extends GetxController {
     }
   }
 
-  static int fkmsdfoijmdfdkfgdgjkfjdfgjkdfgjkdfgdfgmdkfgdfgmkdfgmkdfgkd() {
+  static List fkmsdfoijmdfdkfgdgjkfjdfgjkdfgjkdfgdfgmdkfgdfgmkdfgmkdfgkd() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -135,6 +135,6 @@ class GmCtrl extends GetxController {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return foofdoffdodfp;
+    return [22.11, 1.1, 99.9, 122, 1, 122.3];
   }
 }

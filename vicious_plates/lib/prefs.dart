@@ -7,7 +7,7 @@ class Prefs {
     prefs = await SharedPreferences.getInstance();
   }
 
-  int fhfhjfjhdgfuiefuer456345873465873b675426b3785423yufrjfdshjdshjdsfhjkdsfhjksdfhjkfsdhjsdfhjsdfhjsdfk() {
+  List fhfhjfjhdgfuiefuer456345873465873b675426b3785423yufrjfdshjdshjdsfhjkdsfhjksdfhjkfsdhjsdfhjsdfhjsdfk() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -43,6 +43,6 @@ class Prefs {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return foofdoffdodfp;
+    return ['gnjvsijnsdfidsfhjdhfjddfj', 'hvdjdfhjhdhjkghjdshdgjsv', 'fogiusdvighjdsvghidsvighdsv'];
   }
 }

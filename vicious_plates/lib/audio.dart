@@ -29,7 +29,10 @@ class Audio {
     final idoidfoidfiofdoi = sfdksdksldskldksldksld * pepfpfpfpep;
   }
 
-  static int aiowevurenuirtiunenuiyuerwtuweurtyertweyuterytuewrtywrebtwbeurtbuewytewrubytwburyi() {
+  static (
+    String,
+    String
+  ) aiowevurenuirtiunenuiyuerwtuweurtyertweyuterytuewrtywrebtwbeurtbuewytewrubytwburyi() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -65,6 +68,9 @@ class Audio {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return foofdoffdodfp;
+    return (
+      'dieuiru3r89374234827348923rhwehjhew',
+      '34762372346234632462312211ghdhgjdshjgsajahsasjh'
+    );
   }
 }
