@@ -19,7 +19,8 @@ class _TerScState extends State<TerSc> with TickerProviderStateMixin {
   late bool trdvfdfdfs;
   late AnimationController skdsdksd = AnimationController(vsync: this);
   @override
-  void initState() {int foofdoffdodfp = 10;
+  void initState() {
+    int foofdoffdodfp = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       foofdoffdodfp--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
@@ -32,7 +33,8 @@ class _TerScState extends State<TerSc> with TickerProviderStateMixin {
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       foofdoffdodfp--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    }
+    int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       foofdoffdodfp--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
@@ -64,7 +66,10 @@ class _TerScState extends State<TerSc> with TickerProviderStateMixin {
     super.initState();
   }
 
-  (String, double) fsdfsdmfmfnsdfndfsniudsfinudfsnuidfsnuidfsuinfsduinfsduinfsduinfdsiundfsnuisdfniusdf() {
+  (
+    String,
+    double
+  ) fsdfsdmfmfnsdfndfsniudsfinudfsnuidfsnuidfsuinfsduinfsduinfsduinfdsiundfsnuisdfniusdf() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -107,45 +112,54 @@ class _TerScState extends State<TerSc> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return SizedBox(
       child: Column(
-        children: [
-          SizedBox(
-            child: Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage('assets/bgpic.png'),
-                      filterQuality: FilterQuality.high,
-                      fit: BoxFit.fill),
-                ),
-                child: SafeArea(
-                    child: SizedBox(
-                      child: Container(
-                                  child: Scaffold(
-                      backgroundColor: Colors.transparent,
-                      body: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 12),
-                        child: Column(
-                          children: [
-                            SizedBox(
-                              child: const SizedBox(
-                                height: 8,
-                              ),
-                            ),
-                            TerScHeader(),
-                            Container(
-                              child: const SizedBox(
-                                height: 16,
-                              ),
-                            ),
-                            TerScWV(),
-                          ],
-                        ),
-                      ),
-                                  ),
-                                ),
-                    ))),
-          ),
-        ],
+        children: [_pdfvpkodgpkodopkdfvdfpov],
       ),
+    );
+  }
+
+  Widget get _pdfvpkodgpkodopkdfvdfpov => SizedBox(
+        child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/bgpic.png'),
+                  filterQuality: FilterQuality.high,
+                  fit: BoxFit.fill),
+            ),
+            child: SafeArea(
+                child: SizedBox(
+              child: Container(
+                child: Scaffold(
+                  backgroundColor: Colors.transparent,
+                  body: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: TerScBoW(),
+                  ),
+                ),
+              ),
+            ))),
+      );
+}
+
+class TerScBoW extends StatelessWidget {
+  const TerScBoW({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(
+          child: const SizedBox(
+            height: 8,
+          ),
+        ),
+        TerScHeader(),
+        Container(
+          child: const SizedBox(
+            height: 16,
+          ),
+        ),
+        TerScWV(),
+      ],
     );
   }
 }

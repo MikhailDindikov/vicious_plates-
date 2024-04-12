@@ -29,7 +29,10 @@ class _GmScrState extends State<GmScr> {
   Timer? timer;
   final _ct = Get.put(GmCtrl());
 
-  int eoprpoweorewopriweiroweopiriopweriipwoiprioipwiopipoeipoipoiepiopiopewiopiopweiopiopewipo() {
+  (
+    (String, int),
+    (bool, bool)
+  ) eoprpoweorewopriweiroweopiriopweriipwoiprioipwiopipoeipoipoiepiopiopewiopiopweiopiopewipo() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -65,7 +68,7 @@ class _GmScrState extends State<GmScr> {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return foofdoffdodfp;
+    return (('uhfirfejiffreiref', foofdoffdodfp), (true, false));
   }
 
   @override

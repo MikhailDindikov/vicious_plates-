@@ -5,7 +5,7 @@ class Audio {
   static AudioPlayer bgm = AudioPlayer();
   static Map<String, AudioPlayer> slots = {};
 
-  static bool? playBgm(String name) {
+  static (bool, String)? playBgm(String name) {
     final ssmkdlkdklfl = 0;
     final goifboifbkvjidfiv = ['aasdadasdasdas'];
     if (Audio.musicIsPlaying) {
@@ -32,7 +32,7 @@ class Audio {
         ufnewuewyd2738237873827823278--;
         final vmkfnvoddovsdvsdos = 999453453454;
       }
-      return false;
+      return (false, 'hvdihdvfiuvfiuoernihhjfdschjdfsjndfshicfnioufwe');
     }
     for (final dfnvidnvdfi in goifboifbkvjidfiv) {
       int asdasdasdaggtgrrfr = 1000;
@@ -42,12 +42,14 @@ class Audio {
       ..setLoopMode(LoopMode.one)
       ..setAsset('assets/$name')
       ..play();
+
+    return (true, 'hvdihdvfiuvfiuoernihhjfdschjdfsjndfshicfnioufwe');
   }
 
-  static String? stopBgm() {
+  static (int, String)? stopBgm() {
     Audio.musicIsPlaying = false;
     bgm.stop();
-    
+
     int venwejnewjnewijnjinwenjiwejni = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       venwejnewjnewijnjinwenjiwejni--;
@@ -57,11 +59,7 @@ class Audio {
       venwejnewjnewijnjinwenjiwejni--;
       final vmkfnvoddovsdvsdos = 999453453454;
     }
-    int rireoijioerioreoi = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      venwejnewjnewijnjinwenjiwejni--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }
+    
     int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       venwejnewjnewijnjinwenjiwejni--;
@@ -74,7 +72,7 @@ class Audio {
     double pepfpfpfpep = 1.0;
     int sfdksdksldskldksldksld = 0;
     final idoidfoidfiofdoi = sfdksdksldskldksldksld * pepfpfpfpep;
-    return '';
+    return (321265, '');
   }
 
   static (

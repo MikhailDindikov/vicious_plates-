@@ -16,7 +16,10 @@ class SupSc extends StatefulWidget {
 class _SupScState extends State<SupSc> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return _gdsaksdfokjdsijosdjoisdfjio;
+  }
+
+  Widget get _gdsaksdfokjdsijosdjoisdfjio => Container(
         decoration: BoxDecoration(
           image: DecorationImage(
               image: AssetImage('assets/bgpic.png'),
@@ -48,7 +51,6 @@ class _SupScState extends State<SupSc> {
             ),
           ),
         )));
-  }
 }
 
 class ViewWebSupSc extends StatefulWidget {

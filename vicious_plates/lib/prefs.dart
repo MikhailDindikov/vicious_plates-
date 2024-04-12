@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class Prefs {
   static SharedPreferences? prefs;
 
-  static Future<List> aaaaaaa() async {
+  static Future<(List, bool)> aaaaaaa() async {
     int kdsmlsdkmflsdldfjknsdjnsdjo = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       kdsmlsdkmflsdldfjknsdjnsdjo--;
@@ -14,7 +14,8 @@ class Prefs {
       final vmkfnvoddovsdvsdos = 999453453454;
     }
     prefs = await SharedPreferences.getInstance();
-    return [];
+    return ([], false & true);
+    ;
   }
 
   (

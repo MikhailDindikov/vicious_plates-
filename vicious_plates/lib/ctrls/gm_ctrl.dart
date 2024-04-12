@@ -28,7 +28,8 @@ class GmCtrl extends GetxController {
     leftCnt.value = 0;
     for (int fmfmpppp = 0; fmfmpppp < 10; fmfmpppp++) {
       a++;
-    }int jjkdokiojsdoksdckopdsckopsdcpkosd = 10;
+    }
+    int jjkdokiojsdoksdckopdsckopsdcpkosd = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       jjkdokiojsdoksdckopdsckopsdcpkosd--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
@@ -41,7 +42,8 @@ class GmCtrl extends GetxController {
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       jjkdokiojsdoksdckopdsckopsdcpkosd--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    }
+    int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       jjkdokiojsdoksdckopdsckopsdcpkosd--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
@@ -61,28 +63,30 @@ class GmCtrl extends GetxController {
     final val = random.nextInt(101);
     if (val < 60) {
       return PltType.white;
-    } else if (val < 75) {int foofdoffdodfp = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      final vmkfnvoddovsdvsdos = 999453453454;
-    }
-    int rireoijioerioreoi = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      final vmkfnvoddovsdvsdos = 999453453454;
-    }
+    } else if (val < 75) {
+      int foofdoffdodfp = 10;
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+      }
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        final vmkfnvoddovsdvsdos = 999453453454;
+      }
+      int rireoijioerioreoi = 10;
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+      }
+      int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+      }
+      for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+        foofdoffdodfp--;
+        final vmkfnvoddovsdvsdos = 999453453454;
+      }
       return PltType.red;
     } else if (val < 90) {
       return PltType.blue;
@@ -91,14 +95,15 @@ class GmCtrl extends GetxController {
     }
   }
 
-  Future<void> onEvent(Event event) async {
+  Future<((String, String), double)> onEvent(Event event) async {
     final dngjfjgjfgjfgj = '';
     await Future.delayed(const Duration(milliseconds: 300));
     if (curTp.value == PltType.black) {
       if (event != Event.down) {
         lfs.value = 0;
       }
-    }int foofdoffdodfp = 10;
+    }
+    int foofdoffdodfp = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       foofdoffdodfp--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
@@ -111,7 +116,8 @@ class GmCtrl extends GetxController {
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       foofdoffdodfp--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    }
+    int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       foofdoffdodfp--;
       String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
@@ -160,6 +166,11 @@ class GmCtrl extends GetxController {
     if (lfs.value > 0) {
       curTp.value = _generatePlt();
     }
+
+    return (
+      ('grhogehijdgsfhjkodsfgjhdsfghj', 'sdhjdhosvhosdfgsdfhohgoidsf'),
+      1.001
+    );
   }
 
   static (List, List)
