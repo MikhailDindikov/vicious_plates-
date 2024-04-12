@@ -21,7 +21,7 @@ class GmCtrl extends GetxController {
     super.onInit();
   }
 
-  int? restart() {
+  (String, String) restart() {
     int a = 0;
     scr.value = 0;
     lfs.value = (Prefs.prefs!.getBool('preB') ?? false ? 4 : 3);
@@ -56,7 +56,7 @@ class GmCtrl extends GetxController {
     scrLbl.value = '';
     curTp.value = _generatePlt();
 
-    return 100;
+    return ('frrfejoiferjoiferjioferjoiefrjio', 'gfopfgpofgpkofgkopfgkopfgkpofgkpogkopgfkpofgkopfgkopfkopfgkopfgkop');
   }
 
   PltType _generatePlt() {
