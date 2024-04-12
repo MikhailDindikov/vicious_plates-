@@ -2,7 +2,7 @@ class SupCla {
   static const susoU =
       'https://docs.google.com/forms/d/e/1FAIpQLSe6MR-hZagTkpS1x8EmStuc84YkenmLvHiN32rHM2FgAfz8vA/viewform';
 }
- String dfsdfisdfsdnfusnfisdfnusdfniusdfnuinuifnunudddd() {
+ (String,(int, int)) dfsdfisdfsdnfusnfisdfnusdfniusdfnuinuifnunudddd() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -38,5 +38,5 @@ class SupCla {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return dfdfvdfvdfvdfa+dfdfvdfvdfvdfa+'fdoiviojmidridvfdhfhdjdffdjh';
+    return (dfdfvdfvdfvdfa+dfdfvdfvdfvdfa+'fdoiviojmidridvfdhfhdjdffdjh', (122131,5389523));
   }

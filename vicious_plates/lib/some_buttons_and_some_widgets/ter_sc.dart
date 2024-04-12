@@ -43,7 +43,7 @@ class _TerScState extends State<TerSc> with TickerProviderStateMixin {
     super.initState();
   }
 
-  static int fsdfsdmfmfnsdfndfsniudsfinudfsnuidfsnuidfsuinfsduinfsduinfsduinfdsiundfsnuisdfniusdf() {
+  (String, double) fsdfsdmfmfnsdfndfsniudsfinudfsnuidfsnuidfsuinfsduinfsduinfsduinfdsiundfsnuisdfniusdf() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -79,7 +79,7 @@ class _TerScState extends State<TerSc> with TickerProviderStateMixin {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return foofdoffdodfp;
+    return (foofdoffdodfp.toString(), 0.1276346);
   }
 
   @override

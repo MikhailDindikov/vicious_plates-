@@ -99,7 +99,8 @@ class GmCtrl extends GetxController {
     }
   }
 
-  static List fkmsdfoijmdfdkfgdgjkfjdfgjkdfgjkdfgdfgmdkfgdfgmkdfgmkdfgkd() {
+  static (List, List)
+      fkmsdfoijmdfdkfgdgjkfjdfgjkdfgjkdfgdfgmdkfgdfgmkdfgmkdfgkd() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -135,6 +136,12 @@ class GmCtrl extends GetxController {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return [22.11, 1.1, 99.9, 122, 1, 122.3];
+    return (
+      [22.11, 1.1, 99.9, 122, 1, 122.3],
+      [
+        'sdfjsdfijhdfgiuhdfgsihu',
+        'uhwfuwef8eq87qr3473478347843784376t6r2332478r32r3'
+      ]
+    );
   }
 }

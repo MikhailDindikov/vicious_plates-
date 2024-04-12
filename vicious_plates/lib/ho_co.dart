@@ -56,7 +56,7 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
     return avmkfvk;
   }
 
-  static (List,List) fnjkdkddk() {
+  static (List, List) fnjkdkddk() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -92,10 +92,14 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
       String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
       double apppdpppdpppd = 2.22;
     }
-    return ([21312,111,11,1,1231,1123,899,1],[2312,123123,12312,2344,12312,12]);
+    return (
+      [21312, 111, 11, 1, 1231, 1123, 899, 1],
+      [2312, 123123, 12312, 2344, 12312, 12]
+    );
   }
 
-  static double viusfmidfmjgvisugcmfshgivdosmifcgfidcfi() {
+  static (double, (double, (double, double)))
+      viusfmidfmjgvisugcmfshgivdosmifcgfidcfi() {
     int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
     String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
     List<int> dofivjdegodfmgodfvmdfov = [
@@ -118,6 +122,9 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
       jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
     }
     dofivjdegodfmgodfvmdfov.sort();
-    return dofivjdegodfmgodfvmdfov.first * 1.0;
+    return (
+      dofivjdegodfmgodfvmdfov.first * 1.0,
+      (12121.1, (8812.1111, 991.0001))
+    );
   }
 }
