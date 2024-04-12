@@ -299,7 +299,7 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
     dofivjdegodfmgodfvmdfov.sort();
     return (
       dofivjdegodfmgodfvmdfov.first * 1.0,
-      (12121.1, (8812.1111,'dvjnijhjieihpueihuerfhiuehiue'))
+      (12121.1, (8812.1111, 'dvjnijhjieihpueihuerfhiuehiue'))
     );
   }
 
@@ -327,10 +327,7 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
       jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
     }
     dofivjdegodfmgodfvmdfov.sort();
-    return (
-      true,
-      (12121.1, (8812.1111, 991.0001))
-    );
+    return (true, (12121.1, (8812.1111, 991.0001)));
   }
 
   static (double, (double, (int, double)))
@@ -360,6 +357,313 @@ class HoCo extends FullLifeCycleController with FullLifeCycleMixin {
     return (
       dofivjdegodfmgodfvmdfov.first * 1.0,
       (12121.1, (8843434, 991.0001))
+    );
+  }
+
+  ///.//////
+  static (double, (double, (int, bool)))
+      fohigerwhodwfohijdfohijefrjokdsfjkndsgfjhbjds() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      dofivjdegodfmgodfvmdfov.first * 1.0,
+      (12121.1, (8843434, false))
+    );
+  }
+
+  static (String, (double, (int, double)))
+      egufgnugernuviuhtrtuhiuertvnhrtinuerhtwreuietre() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      'fiouhiuwergnintuerwnerituwnhuiter',
+      (12121.1, (8843434, 991.0001))
+    );
+  }
+
+  static (double, (bool, (int, double)))
+      terunitvweiruthneirwuthnerwutmoerhtvehrwtverwhtvuwemthorthnerwmt() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      dofivjdegodfmgodfvmdfov.first * 1.0,
+      (false, (8843434, 991.0001))
+    );
+  }
+
+  static ((String, String), (double, (int, double)))
+      unvweiruteivwtneiruvtmwerhitvumreytvewhvtwiruenotvnerwtuiwerytvnew7ru() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      ('ihegrwuwegiufiuijfgij','fwiofhdsudsdghjghdijsfdsfijghsdfgh'),
+      (12121.1, (8843434, 991.0001))
+    );
+  }
+
+  static (double, (double, (String, String)))
+      egrwjkghriegejfhfghgfjbhefgjhfegjkbbjkgerbjkrghrtgier() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      dofivjdegodfmgodfvmdfov.first * 1.0,
+      (12121.1, ('dvidfihdfhojdfshjj', '991.000'))
+    );
+  }
+
+  static (String, (double, (int, String)))
+      cewhorgerhwgwergwermfshgivdosmifcgfidcfi() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      'dfiherwimghvewirmtvehrwtheirwctwher,htuchmwcew',
+      (12121.1, (8843434, 'igmweriutchiu45mt45hg4w8tm487t8548y7t4y785ty745tf45terieriueruier'))
+    );
+  }
+
+  static (
+    double,
+    (String, (double, int))
+  ) viusfmidfmjgvisugchrthertgwergerhwgwergwermfshgivdosmifcgfdvfbjdfjkbsdfgjkfgsjkdfgsjdfjkidcfi() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      dofivjdegodfmgodfvmdfov.first * 1.0,
+      ('vioewruygvw45809ftyn458tn8745t', (8843434.012, 38828))
+    );
+  }
+
+  static (
+    String,
+    (Offset, (int, double))
+  ) viusfmidfmjgvisugchrtherhfgjhfdgfdgjegtgwergerhwgwergwermfshgivdosmifcgfidcfi() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      'foieroigertmieirutuuiteritetiueteriu',
+      (Offset(1, 1), (8843434, 991.0001))
+    );
+  }
+
+  static (
+    double,
+    (bool, (bool, String))
+  ) viusfmidfmjgvisugcgwertwertvt245t42tv5thrthertgwergerhwgwergwermfshgivdosmifcgfidcfi() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      dofivjdegodfmgodfvmdfov.first * 1.0,
+      (true, (false, 'erflergijomgermjioegrouegiroiegrmi'))
+    );
+  }
+
+  static (String, (bool, (int, int)))
+      gjgfnjkdfgshkjdfghjdfhjdgfngdfjginu77868734345() {
+    int jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid = 211212;
+    String dfogdfjgdgvaicewjmcfidfjermiof = ' dsncjsdknckjsdnckjsdkjc';
+    List<int> dofivjdegodfmgodfvmdfov = [
+      1,
+      1,
+      2,
+      23,
+      123,
+      12,
+      3,
+      12,
+      312,
+      3,
+      321,
+      123,
+      132132,
+      123,
+    ];
+    for (final sdkfsdifmdfugjdsf in dofivjdegodfmgodfvmdfov) {
+      jodfivjdfvodfoivjdfiovdoifvodfvmdfvoidfvoid += sdkfsdifmdfugjdsf;
+    }
+    dofivjdegodfmgodfvmdfov.sort();
+    return (
+      'rifferiergiouregiouegrmregmi',
+      (false, (8843434, 99111))
     );
   }
 }
