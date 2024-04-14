@@ -290,6 +290,7 @@ class _GmScrState extends State<GmScr> {
   }
 
   void scoreDlg() {
+    Audio.plaOnce('end.mp3');
     showDialog(
       context: context,
       barrierColor: Colors.transparent,

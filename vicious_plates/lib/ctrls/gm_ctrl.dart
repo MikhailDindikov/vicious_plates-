@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:get/state_manager.dart';
+import 'package:vicious_plates/audio.dart';
 import 'package:vicious_plates/prefs.dart';
 import 'package:vicious_plates/some_buttons_and_some_widgets/cur_plt.dart';
 
@@ -103,7 +104,10 @@ class GmCtrl extends GetxController {
     await Future.delayed(const Duration(milliseconds: 200));
     if (curTp.value == PltType.black) {
       if (event != Event.down) {
+        Audio.plaOnce('exc.mp3');
         lfs.value = 0;
+      } else {
+        Audio.plaOnce('down.mp3');
       }
       scrLbl.value = '';
     }
@@ -136,20 +140,24 @@ class GmCtrl extends GetxController {
     }
     if (curTp.value == PltType.red) {
       if (event == Event.left) {
+        Audio.plaOnce('swipe.mp3');
         scr.value += 2;
         scrLbl.value = '+ 2';
         leftCnt.value += 1;
       } else {
+        Audio.plaOnce('exc.mp3');
         scrLbl.value = '';
         lfs.value -= 1;
       }
     }
     if (curTp.value == PltType.blue) {
       if (event == Event.right) {
+        Audio.plaOnce('swipe.mp3');
         scr.value += 2;
         scrLbl.value = '+ 2';
         rightCnt.value += 1;
       } else {
+        Audio.plaOnce('exc.mp3');
         scrLbl.value = '';
         lfs.value -= 1;
       }
@@ -162,10 +170,11 @@ class GmCtrl extends GetxController {
     }
     if (curTp.value == PltType.white) {
       if (event == Event.tap) {
+        Audio.plaOnce('break.mp3');
         scr.value += 1;
         scrLbl.value = '+ 1';
-      
       } else {
+        Audio.plaOnce('exc.mp3');
         scrLbl.value = '';
         lfs.value -= 1;
       }

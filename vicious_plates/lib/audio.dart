@@ -46,6 +46,45 @@ class Audio {
     return (true, 'hvdihdvfiuvfiuoernihhjfdschjdfsjndfshicfnioufwe');
   }
 
+  static (bool, int)? plaOnce(String name) {
+    final ssmkdlkdklfl = 0;
+    final goifboifbkvjidfiv = ['aasdadasdasdas'];
+
+    int ufnewuewyd2738237873827823278 = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      ufnewuewyd2738237873827823278--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      ufnewuewyd2738237873827823278--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+    int rireoijioerioreoi = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      ufnewuewyd2738237873827823278--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      ufnewuewyd2738237873827823278--;
+      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
+    }
+    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+      ufnewuewyd2738237873827823278--;
+      final vmkfnvoddovsdvsdos = 999453453454;
+    }
+
+    for (final dfnvidnvdfi in goifboifbkvjidfiv) {
+      int asdasdasdaggtgrrfr = 1000;
+    }
+    Audio.musicIsPlaying = true;
+    AudioPlayer()
+      ..setAsset('assets/$name')
+      ..play();
+
+    return (true, 12441);
+  }
+
   static (int, String)? stopBgm() {
     Audio.musicIsPlaying = false;
     bgm.stop();
@@ -59,7 +98,7 @@ class Audio {
       venwejnewjnewijnjinwenjiwejni--;
       final vmkfnvoddovsdvsdos = 999453453454;
     }
-    
+
     int dfsdsdfdsfdssdfsdfsddsfsdfsdfsdf = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
       venwejnewjnewijnjinwenjiwejni--;
