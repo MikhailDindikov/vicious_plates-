@@ -459,8 +459,8 @@ class _GmScrState extends State<GmScr> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            _pltInfo('assets/wp.png', 'TAP\n'),
-                            _pltInfo('assets/rp.png', 'SWIPE\nLEFT'),
+                            _pltInfo('assets/wp.png', 'TAP\n', '+1'),
+                            _pltInfo('assets/rp.png', 'SWIPE\nLEFT', '+2'),
                           ],
                         ),
                         SizedBox(
@@ -469,8 +469,8 @@ class _GmScrState extends State<GmScr> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            _pltInfo('assets/bp.png', 'SWIPE\nRIGHT'),
-                            _pltInfo('assets/blp.png', 'SWIPE\nDOWN'),
+                            _pltInfo('assets/bp.png', 'SWIPE\nRIGHT', '+2'),
+                            _pltInfo('assets/blp.png', 'SWIPE\nDOWN', ''),
                           ],
                         ),
                       ],
@@ -503,13 +503,28 @@ class _GmScrState extends State<GmScr> {
     ).then((value) => _pause.value = false);
   }
 
-  Widget _pltInfo(String path, String perc) => Column(
+  Widget _pltInfo(String path, String perc, String ochki) => Column(
         children: [
-          Image.asset(
-            path,
-            filterQuality: FilterQuality.high,
-            height: 133,
-            width: 133,
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              Image.asset(
+                path,
+                filterQuality: FilterQuality.high,
+                height: 133,
+                width: 133,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: TextWithShadow(
+                  ochki.toUpperCase(),
+                  textSize: 18,
+                  color: Color.fromRGBO(255, 255, 255, 1),
+                  backColor: Color.fromRGBO(186, 85, 21, 1),
+                  borderColor: Color.fromRGBO(229, 107, 30, 1),
+                ),
+              ),
+            ],
           ),
           TextWithShadow(
             perc.toUpperCase(),
