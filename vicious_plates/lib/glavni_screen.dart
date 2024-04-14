@@ -505,189 +505,208 @@ class _GlavniScreenState extends State<GlavniScreen> {
   }
 
   void mdlPre() {
-    showModalBottomSheet(
+    showDialog(
       context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-      builder: (context) => Container(
-        padding: EdgeInsets.all(16),
-        decoration: BoxDecoration(
-            color: Color.fromRGBO(254, 242, 234, 1),
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(12),
-              topRight: Radius.circular(12),
-            )),
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SizedBox(
-                    width: 24,
-                  ),
-                  TextWithShadow(
-                    'Premium\nFeatures'.toUpperCase(),
-                    color: Colors.white,
-                    backColor: Color.fromRGBO(0, 0, 0, 1),
-                    borderColor: Color.fromRGBO(0, 0, 0, 1),
-                  ),
-                  GestureDetector(
-                    onTap: Get.back,
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 2),
-                      child: Image.asset(
-                        'assets/clscls.png',
-                        filterQuality: FilterQuality.high,
-                        width: 24,
+      barrierColor: Colors.transparent,
+      builder: (context) => BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+        child: IntrinsicHeight(
+          child: Material(
+            color: Colors.transparent,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
+                  padding: EdgeInsets.all(8).copyWith(bottom: 20),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(254, 242, 234, 1),
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(0, 4),
+                        blurRadius: 0,
+                        spreadRadius: 0,
+                        color: Color.fromRGBO(217, 202, 192, 1),
                       ),
-                    ),
+                    ],
                   ),
-                ],
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Image.asset(
-                'assets/stststs.png',
-                filterQuality: FilterQuality.high,
-              ),
-              const SizedBox(
-                height: 25,
-              ),
-              SomeButWithoutTreshina(
-                  child: TextWithShadow(
-                    'No ADs'.toUpperCase(),
-                    textSize: 16,
-                    color: Color.fromRGBO(255, 255, 255, 1),
-                    backColor: Color.fromRGBO(21, 67, 186, 1),
-                    borderColor: Color.fromRGBO(30, 74, 229, 1),
-                  ),
-                  color: Color.fromRGBO(234, 240, 254, 1),
-                  shadowColor: Color.fromRGBO(192, 202, 217, 1)),
-              SizedBox(
-                height: 16,
-              ),
-              SomeButWithoutTreshina(
-                  child: TextWithShadow(
-                    'Additional life in play'.toUpperCase(),
-                    textSize: 16,
-                    color: Color.fromRGBO(255, 255, 255, 1),
-                    backColor: Color.fromRGBO(21, 67, 186, 1),
-                    borderColor: Color.fromRGBO(30, 74, 229, 1),
-                  ),
-                  color: Color.fromRGBO(234, 240, 254, 1),
-                  shadowColor: Color.fromRGBO(192, 202, 217, 1)),
-              SizedBox(
-                height: 16,
-              ),
-              SomeButWithoutTreshina(
-                  child: TextWithShadow(
-                    '120 sec mode'.toUpperCase(),
-                    textSize: 16,
-                    color: Color.fromRGBO(255, 255, 255, 1),
-                    backColor: Color.fromRGBO(21, 67, 186, 1),
-                    borderColor: Color.fromRGBO(30, 74, 229, 1),
-                  ),
-                  color: Color.fromRGBO(234, 240, 254, 1),
-                  shadowColor: Color.fromRGBO(192, 202, 217, 1)),
-              SizedBox(
-                height: 100,
-              ),
-              GestureDetector(
-                onTap: () async {
-                  final hgpre = Prefs.prefs!.getBool('preB') ?? false;
-                  if (hgpre) {
-                    Get.back();
-                    prADlg();
-                  } else {
-                    if (!preLo.value) {
-                      preLo.value = true;
-                      bool bd = false;
-
-                      final apw = await Apphud.paywalls();
-                      print(apw?.paywalls.first.products?.first);
-
-                      await Apphud.purchase(
-                        product: apw?.paywalls.first.products?.first,
-                      ).whenComplete(
-                        () async {
-                          if (await Apphud.hasPremiumAccess() ||
-                              await Apphud.hasActiveSubscription()) {
-                            await Prefs.prefs!.setBool('preB', true);
-                            bd = true;
-                          }
-                        },
-                      );
-
-                      preLo.value = false;
-
-                      if (bd) {
-                        Get.back();
-                        prADlg();
-                      }
-                    }
-                  }
-                },
-                child: SomeButtomOnSomeScreen(
-                  color: Color.fromRGBO(254, 181, 49, 1),
-                  shadowColor: Color.fromRGBO(249, 92, 8, 1),
-                  child: Obx(
-                    () => preLo.value
-                        ? const CupertinoActivityIndicator(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          SizedBox(
+                            width: 50,
+                          ),
+                          TextWithShadow(
+                            'Premium'.toUpperCase(),
                             color: Colors.white,
-                          )
-                        : TextWithShadow(
-                            'Buy Premium for 0.99\$'.toUpperCase(),
+                            backColor: Color.fromRGBO(0, 0, 0, 1),
+                            borderColor: Color.fromRGBO(0, 0, 0, 1),
+                          ),
+                          GestureDetector(
+                            onTap: Get.back,
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 2),
+                              child: Image.asset(
+                                'assets/crclcls.png',
+                                filterQuality: FilterQuality.high,
+                                width: 50,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Image.asset(
+                        'assets/stststs.png',
+                        filterQuality: FilterQuality.high,
+                        height: 96,
+                        width: 96,
+                      ),
+                      const SizedBox(
+                        height: 13,
+                      ),
+                      SomeButWithoutTreshina(
+                          child: TextWithShadow(
+                            'No ADs'.toUpperCase(),
                             textSize: 16,
                             color: Color.fromRGBO(255, 255, 255, 1),
-                            backColor: Color.fromRGBO(186, 85, 21, 1),
-                            borderColor: Color.fromRGBO(229, 107, 30, 1),
+                            backColor: Color.fromRGBO(21, 67, 186, 1),
+                            borderColor: Color.fromRGBO(30, 74, 229, 1),
                           ),
+                          color: Color.fromRGBO(234, 240, 254, 1),
+                          shadowColor: Color.fromRGBO(192, 202, 217, 1)),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      SomeButWithoutTreshina(
+                          child: TextWithShadow(
+                            'ONE EXTRA LIFE'.toUpperCase(),
+                            textSize: 16,
+                            color: Color.fromRGBO(255, 255, 255, 1),
+                            backColor: Color.fromRGBO(21, 67, 186, 1),
+                            borderColor: Color.fromRGBO(30, 74, 229, 1),
+                          ),
+                          color: Color.fromRGBO(234, 240, 254, 1),
+                          shadowColor: Color.fromRGBO(192, 202, 217, 1)),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      SomeButWithoutTreshina(
+                          child: TextWithShadow(
+                            '120 sec mode'.toUpperCase(),
+                            textSize: 16,
+                            color: Color.fromRGBO(255, 255, 255, 1),
+                            backColor: Color.fromRGBO(21, 67, 186, 1),
+                            borderColor: Color.fromRGBO(30, 74, 229, 1),
+                          ),
+                          color: Color.fromRGBO(234, 240, 254, 1),
+                          shadowColor: Color.fromRGBO(192, 202, 217, 1)),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      GestureDetector(
+                        onTap: () async {
+                          final hgpre = Prefs.prefs!.getBool('preB') ?? false;
+                          if (hgpre) {
+                            Get.back();
+                            prADlg();
+                          } else {
+                            if (!preLo.value) {
+                              preLo.value = true;
+                              bool bd = false;
+
+                              final apw = await Apphud.paywalls();
+                              print(apw?.paywalls.first.products?.first);
+
+                              await Apphud.purchase(
+                                product: apw?.paywalls.first.products?.first,
+                              ).whenComplete(
+                                () async {
+                                  if (await Apphud.hasPremiumAccess() ||
+                                      await Apphud.hasActiveSubscription()) {
+                                    await Prefs.prefs!.setBool('preB', true);
+                                    bd = true;
+                                  }
+                                },
+                              );
+
+                              preLo.value = false;
+
+                              if (bd) {
+                                Get.back();
+                                prADlg();
+                              }
+                            }
+                          }
+                        },
+                        child: SomeButtomOnSomeScreen(
+                          color: Color.fromRGBO(254, 181, 49, 1),
+                          shadowColor: Color.fromRGBO(249, 92, 8, 1),
+                          child: Obx(
+                            () => preLo.value
+                                ? const CupertinoActivityIndicator(
+                                    color: Colors.white,
+                                  )
+                                : TextWithShadow(
+                                    'Buy Premium for 0.99\$'.toUpperCase(),
+                                    textSize: 16,
+                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                    backColor: Color.fromRGBO(186, 85, 21, 1),
+                                    borderColor:
+                                        Color.fromRGBO(229, 107, 30, 1),
+                                  ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      GestureDetector(
+                        onTap: () async {
+                          bool hPr = Prefs.prefs!.getBool("preB") ?? false;
+                          if (hPr) {
+                            Get.back();
+                            prADlg();
+                          } else {
+                            final prea = await Apphud.hasPremiumAccess();
+                            final sup = await Apphud.hasActiveSubscription();
+                            if (prea || sup) {
+                              await Prefs.prefs!.setBool('preB', true);
+                              Get.back();
+                              reSuDlg();
+                            } else {
+                              Get.back();
+                              reErDlg();
+                            }
+                          }
+                        },
+                        child: SomeButtomOnSomeScreen(
+                          color: Color.fromRGBO(49, 106, 254, 1),
+                          shadowColor: Color.fromRGBO(8, 90, 249, 1),
+                          child: TextWithShadow(
+                            'Restore Purchase'.toUpperCase(),
+                            textSize: 16,
+                            color: Color.fromRGBO(255, 255, 255, 1),
+                            backColor: Color.fromRGBO(21, 67, 186, 1),
+                            borderColor: Color.fromRGBO(30, 74, 229, 1),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              GestureDetector(
-                onTap: () async {
-                  bool hPr = Prefs.prefs!.getBool("preB") ?? false;
-                  if (hPr) {
-                    Get.back();
-                    prADlg();
-                  } else {
-                    final prea = await Apphud.hasPremiumAccess();
-                    final sup = await Apphud.hasActiveSubscription();
-                    if (prea || sup) {
-                      await Prefs.prefs!.setBool('preB', true);
-                      Get.back();
-                      reSuDlg();
-                    } else {
-                      Get.back();
-                      reErDlg();
-                    }
-                  }
-                },
-                child: SomeButtomOnSomeScreen(
-                  color: Color.fromRGBO(49, 106, 254, 1),
-                  shadowColor: Color.fromRGBO(8, 90, 249, 1),
-                  child: TextWithShadow(
-                    'Restore Purchase'.toUpperCase(),
-                    textSize: 16,
-                    color: Color.fromRGBO(255, 255, 255, 1),
-                    backColor: Color.fromRGBO(21, 67, 186, 1),
-                    borderColor: Color.fromRGBO(30, 74, 229, 1),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 40,
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
