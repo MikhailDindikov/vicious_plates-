@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:vicious_plates/gm_scr.dart';
+import 'package:vicious_plates/prefs.dart';
 import 'package:vicious_plates/some_button_on_some_screen.dart';
 
 import 'some_buttons_and_some_widgets/text_with_shadow.dart';
@@ -111,6 +112,20 @@ class TimeSelector extends StatelessWidget {
                                   ));
                             },
                             child: Sec60Bt()),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        if (Prefs.prefs!.getBool("preB") ?? false)
+                          GestureDetector(
+                              onTap: () {
+                                Get.to(() => GmScr(
+                                      key: UniqueKey(),
+                                      secs: 120,
+                                    ));
+                              },
+                              child: Sec120PremBt())
+                        else
+                          Sec120NotPremBt(),
                       ],
                     ),
                   ),
@@ -126,43 +141,43 @@ class TimeSelector extends StatelessWidget {
 }
 
 int ghndgfshjkfcdshkjsdgfjhokgfjhgerwhiuegriouerw87y478438734cyuu38723782378232378f() {
-    var dfdfvdfvdfvdfa = '';
-    dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
-    int foofdoffdodfp = 10;
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
-    }
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      final vmkfnvoddovsdvsdos = 999453453454;
-    }
-    for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
-      foofdoffdodfp--;
-      var adjkdmdksdmsdkls = 'dfhjsdjfimdvgnsdfihdfngdhfmskfghfjkdg';
-      var adjkdcsdcsdcsdcmdksdmsdkls = 'dfhjsdjfimdvgnsdfihdfngdhfmskfghfjkdg';
-      var adjkdmdkcdscsdcsdmsdkls =
-          'dfhjsdjfimdvgnsdfihdsdfsdczczxcfngdhfmskfghfjkdg';
-      var adjkdmdksdcsdcsdmsdkls = 'czczxczxczxczxcsxdfevgrdthdgdfghghh';
-      var adjkdmdksczxczxczxcdmsdkls =
-          'dfhjsdjfimdvgnsdyhgfthdfghfdghdsfghdttgrewrgrtgfihdfngdhfmskfghfjkdg';
-      var adjkdmdksxczxczczxczxdmsdkls =
-          'gdfgdgsdfgsdbkmwemroiuveuinrtyneriuerntuvinwuiwertyveinruterwiutn';
-      final difovjoidsvmsdoifmsdocmsodcmisdcsodc =
-          adjkdmdksdmsdkls + adjkdmdkcdscsdcsdmsdkls;
-      int jdscnsdcsdkcsdcksdncs = 23838328;
-    }
-    int csjksdfmsdocmsdlcmksdc = 9993223923;
-    csjksdfmsdocmsdlcmksdc = -2893981;
-    if ('true' == csjksdfmsdocmsdlcmksdc.toString()) {
-      final aaaaasdksdokfsmdoiosdrmiocimwoofiwesoidvfs = 11111122;
-      int jsdfosdfodsfiosdof = 28198;
-      final ppspdpdspsdpsdpdspdsdps = 120202;
-      String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
-      double apppdpppdpppd = 2.22;
-    }
-    return foofdoffdodfp;
+  var dfdfvdfvdfvdfa = '';
+  dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
+  int foofdoffdodfp = 10;
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    foofdoffdodfp--;
+    String vndsfovnmdovimodvif = 'vdsjbfvdbhcxkjasdbsckjewfhdejnfscdjf';
   }
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    foofdoffdodfp--;
+    final vmkfnvoddovsdvsdos = 999453453454;
+  }
+  for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
+    foofdoffdodfp--;
+    var adjkdmdksdmsdkls = 'dfhjsdjfimdvgnsdfihdfngdhfmskfghfjkdg';
+    var adjkdcsdcsdcsdcmdksdmsdkls = 'dfhjsdjfimdvgnsdfihdfngdhfmskfghfjkdg';
+    var adjkdmdkcdscsdcsdmsdkls =
+        'dfhjsdjfimdvgnsdfihdsdfsdczczxcfngdhfmskfghfjkdg';
+    var adjkdmdksdcsdcsdmsdkls = 'czczxczxczxczxcsxdfevgrdthdgdfghghh';
+    var adjkdmdksczxczxczxcdmsdkls =
+        'dfhjsdjfimdvgnsdyhgfthdfghfdghdsfghdttgrewrgrtgfihdfngdhfmskfghfjkdg';
+    var adjkdmdksxczxczczxczxdmsdkls =
+        'gdfgdgsdfgsdbkmwemroiuveuinrtyneriuerntuvinwuiwertyveinruterwiutn';
+    final difovjoidsvmsdoifmsdocmsodcmisdcsodc =
+        adjkdmdksdmsdkls + adjkdmdkcdscsdcsdmsdkls;
+    int jdscnsdcsdkcsdcksdncs = 23838328;
+  }
+  int csjksdfmsdocmsdlcmksdc = 9993223923;
+  csjksdfmsdocmsdlcmksdc = -2893981;
+  if ('true' == csjksdfmsdocmsdlcmksdc.toString()) {
+    final aaaaasdksdokfsmdoiosdrmiocimwoofiwesoidvfs = 11111122;
+    int jsdfosdfodsfiosdof = 28198;
+    final ppspdpdspsdpsdpdspdsdps = 120202;
+    String fiomsdkfkmsdfkmsdfk = 'doffmosdfmsdfmsdfosdmofsdfo';
+    double apppdpppdpppd = 2.22;
+  }
+  return foofdoffdodfp;
+}
 
 class Sec60Bt extends StatelessWidget {
   const Sec60Bt({super.key});
@@ -214,6 +229,54 @@ class Sec15Bt extends StatelessWidget {
         backColor: Color.fromRGBO(21, 67, 186, 1),
         borderColor: Color.fromRGBO(30, 74, 229, 1),
       ),
+    );
+  }
+}
+
+class Sec120PremBt extends StatelessWidget {
+  const Sec120PremBt({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SomeButtomOnSomeScreen(
+      color: Color.fromRGBO(49, 106, 254, 1),
+      shadowColor: Color.fromRGBO(8, 90, 249, 1),
+      child: TextWithShadow(
+        '120 sec'.toUpperCase(),
+        color: Color.fromRGBO(255, 255, 255, 1),
+        backColor: Color.fromRGBO(21, 67, 186, 1),
+        borderColor: Color.fromRGBO(30, 74, 229, 1),
+      ),
+    );
+  }
+}
+
+class Sec120NotPremBt extends StatelessWidget {
+  const Sec120NotPremBt({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SomeButtomOnSomeScreen(
+          color: Color.fromRGBO(234, 240, 254, 1),
+          shadowColor: Color.fromRGBO(8, 90, 249, 1),
+          child: TextWithShadow(
+            '120 sec'.toUpperCase(),
+            color: Color.fromRGBO(255, 255, 255, 1),
+            backColor: Color.fromRGBO(21, 67, 186, 1),
+            borderColor: Color.fromRGBO(30, 74, 229, 1),
+          ),
+        ),
+        SizedBox(height: 10,),
+        TextWithShadow(
+            'available only with premium'.toUpperCase(),
+            textSize: 12,
+            color: Color.fromRGBO(255, 255, 255, 1),
+            backColor: Color.fromRGBO(21, 67, 186, 1),
+            borderColor: Color.fromRGBO(30, 74, 229, 1),
+          ),
+      ],
     );
   }
 }

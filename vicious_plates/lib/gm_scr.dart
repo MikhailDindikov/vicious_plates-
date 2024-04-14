@@ -13,6 +13,7 @@ import 'package:vicious_plates/r_plt_widget.dart';
 import 'package:vicious_plates/some_button_on_some_screen.dart';
 import 'package:vicious_plates/some_buttons_and_some_widgets/cur_plt.dart';
 
+import 'audio.dart';
 import 'some_buttons_and_some_widgets/text_with_shadow.dart';
 
 class GmScr extends StatefulWidget {
@@ -90,8 +91,10 @@ class _GmScrState extends State<GmScr> {
       return '15sec';
     } else if (widget.secs == 30) {
       return '30sec';
-    } else {
+    } else if (widget.secs == 60) {
       return '60sec';
+    } else {
+      return '120sec';
     }
   }
 
@@ -129,6 +132,7 @@ class _GmScrState extends State<GmScr> {
   }
 
   void stgsDlg() {
+    RxBool liMu = (Prefs.prefs!.getBool('msc') ?? true).obs;
     showDialog(
       context: context,
       barrierColor: Colors.transparent,
@@ -165,11 +169,46 @@ class _GmScrState extends State<GmScr> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            SizedBox(
-                              width: 50,
+                            GestureDetector(
+                              onTap: () {
+                                liMu.toggle();
+                                if (liMu.value) {
+                                  Audio.playBgm('mus.mp3');
+                                  Prefs.prefs!.setBool('msc', true);
+                                } else {
+                                  Audio.stopBgm();
+                                  Prefs.prefs!.setBool('msc', false);
+                                }
+                              },
+                              child: Stack(
+                                key: UniqueKey(),
+                                alignment: Alignment.center,
+                                children: [
+                                  Image.asset(
+                                    'assets/msc.png',
+                                    filterQuality: FilterQuality.high,
+                                    height: 50,
+                                    width: 50,
+                                  ),
+                                  Obx(
+                                    () => Visibility(
+                                        visible: !liMu.value,
+                                        child: Transform(
+                                          alignment: FractionalOffset.center,
+                                          transform: Matrix4.identity()
+                                            ..rotateZ(45 * 3.14159265 / 180),
+                                          child: Container(
+                                            height: 50,
+                                            width: 4,
+                                            color: Color.fromRGBO(255, 0, 0, 1),
+                                          ),
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                             TextWithShadow(
-                              'SETTINGS'.toUpperCase(),
+                              'PAUSE'.toUpperCase(),
                               color: Color.fromRGBO(255, 255, 255, 1),
                               backColor: Color.fromRGBO(0, 0, 0, 1),
                               borderColor: Color.fromRGBO(0, 0, 0, 1),
@@ -370,7 +409,7 @@ class _GmScrState extends State<GmScr> {
         child: Material(
           color: Colors.transparent,
           child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16),
+            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
             padding: EdgeInsets.all(4),
             decoration: BoxDecoration(
               color: Color.fromRGBO(254, 242, 234, 1),
@@ -419,8 +458,8 @@ class _GmScrState extends State<GmScr> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            _pltInfo('assets/wp.png', '60%'),
-                            _pltInfo('assets/rp.png', '15%'),
+                            _pltInfo('assets/wp.png', 'TAP\n'),
+                            _pltInfo('assets/rp.png', 'SWIPE\nLEFT'),
                           ],
                         ),
                         SizedBox(
@@ -429,39 +468,26 @@ class _GmScrState extends State<GmScr> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            _pltInfo('assets/bp.png', '15%'),
-                            _pltInfo('assets/blp.png', '10%'),
+                            _pltInfo('assets/bp.png', 'SWIPE\nRIGHT'),
+                            _pltInfo('assets/blp.png', 'SWIPE\nDOWN'),
                           ],
                         ),
                       ],
                     ),
                   ),
                   SizedBox(
-                    height: 48,
+                    height: 82,
                   ),
                   Center(
-                    child: Column(
-                      children: [
-                        TextWithShadow(
-                          'As fast as possible:'.toUpperCase(),
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                          backColor: Color.fromRGBO(0, 0, 0, 1),
-                          borderColor: Color.fromRGBO(0, 0, 0, 1),
-                        ),
-                        SizedBox(
-                          height: 24,
-                        ),
-                        Text(
-                          'Smash white plates\nSwipe left red plates\nSwipe right blue plates\nBeware and swipe down black plates\nKeep track of time and lives.',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontFamily: 'Gil',
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            color: Color.fromRGBO(0, 0, 0, 1),
-                          ),
-                        ),
-                      ],
+                    child: Text(
+                      'Properly distribute the plates\nto avoid losing hearts',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: 'Gil',
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                        color: Color.fromRGBO(0, 0, 0, 1),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -507,65 +533,59 @@ class _GmScrState extends State<GmScr> {
             body: Column(
               children: [
                 const SizedBox(
-                  height: 8,
+                  height: 24,
                 ),
-                SafeArea(
-                  child: Align(
-                    alignment: Alignment.topCenter,
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 24),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              _pause.value = true;
-                              stgsDlg();
-                            },
-                            child: Image.asset(
-                              'assets/stgstg.png',
-                              filterQuality: FilterQuality.high,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 32),
-                            child: Column(
-                              children: [
-                                Obx(
-                                  () => TextWithShadow(
-                                    _ct.scr.value.toString().toUpperCase(),
-                                    textSize: 32,
-                                    color: Color.fromRGBO(255, 255, 255, 1),
-                                    backColor: Color.fromRGBO(186, 85, 21, 1),
-                                    borderColor:
-                                        Color.fromRGBO(229, 107, 30, 1),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 8,
-                                ),
-                                TextWithShadow(
-                                  'SCORES'.toUpperCase(),
-                                  color: Color.fromRGBO(255, 255, 255, 1),
-                                  backColor: Color.fromRGBO(186, 85, 21, 1),
-                                  borderColor: Color.fromRGBO(229, 107, 30, 1),
-                                ),
-                              ],
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              _pause.value = true;
-                              infoDlg();
-                            },
-                            child: Image.asset(
-                              'assets/qqqsssttt.png',
-                              filterQuality: FilterQuality.high,
-                            ),
-                          ),
-                        ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          _pause.value = true;
+                          stgsDlg();
+                        },
+                        child: Image.asset(
+                          'assets/pause.png',
+                          filterQuality: FilterQuality.high,
+                        ),
                       ),
-                    ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 32),
+                        child: Column(
+                          children: [
+                            Obx(
+                              () => TextWithShadow(
+                                _ct.scr.value.toString().toUpperCase(),
+                                textSize: 32,
+                                color: Color.fromRGBO(255, 255, 255, 1),
+                                backColor: Color.fromRGBO(186, 85, 21, 1),
+                                borderColor: Color.fromRGBO(229, 107, 30, 1),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            TextWithShadow(
+                              'SCORES'.toUpperCase(),
+                              color: Color.fromRGBO(255, 255, 255, 1),
+                              backColor: Color.fromRGBO(186, 85, 21, 1),
+                              borderColor: Color.fromRGBO(229, 107, 30, 1),
+                            ),
+                          ],
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          _pause.value = true;
+                          infoDlg();
+                        },
+                        child: Image.asset(
+                          'assets/qqqsssttt.png',
+                          filterQuality: FilterQuality.high,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 SizedBox(
@@ -577,72 +597,104 @@ class _GmScrState extends State<GmScr> {
                   ),
                 ),
                 SizedBox(
-                  height: 80,
+                  height: 50,
                 ),
                 Container(
-                  height: 231,
+                  height: 375,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(colors: [
                       Color.fromRGBO(255, 255, 255, 1),
                       Color.fromRGBO(220, 220, 220, 1),
                     ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
                   ),
-                  child: Stack(
-                    fit: StackFit.expand,
-                    alignment: Alignment.center,
+                  child: Column(
                     children: [
-                      Positioned(
-                        left: -60.5,
-                        child: Obx(
-                          () => RPltWidget(
-                            count: _ct.leftCnt.value,
-                          ),
-                        ),
-                      ),
-                      Obx(
-                        () => CurPlt(
-                          type: _ct.curTp.value,
-                          callback: (event) {
-                            _ct.onEvent(event).then((value) {
-                              if (_ct.lfs.value < 1) {
-                                final val =
-                                    Prefs.prefs!.getStringList(getPrSt()) ?? [];
-                                final min = int.parse(
-                                    (val.lastOrNull ?? ':0').split(':').last);
-                                if (val.length < 15 || min < _ct.scr.value) {
-                                  if (val.length == 15) {
-                                    val.removeLast();
-                                  }
-                                  final date = DateFormat('dd.MM.yyyy')
-                                      .format(DateTime.now())
-                                      .toString();
-                                  val.add('$date:${_ct.scr.value}');
-                                  if (val.length > 1) {
-                                    val.sort((a, b) {
-                                      int av = int.parse(a.split(':').last);
-                                      int bv = int.parse(b.split(':').last);
-                                      return bv.compareTo(av);
-                                    });
-                                  }
-                                  Prefs.prefs!.setStringList(getPrSt(), val);
-                                }
-                                timer!.cancel();
-                                scoreDlg();
-                              }
-                            });
-                          },
-                        ),
-                      ),
-                      Positioned(
-                        right: -60.5,
-                        child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Obx(
-                            () => BPltWidget(
-                              count: _ct.rightCnt.value,
+                      Container(
+                        height: 250,
+                        margin: EdgeInsets.only(bottom: 6),
+                        child: Stack(
+                          fit: StackFit.expand,
+                          alignment: Alignment.center,
+                          children: [
+                            Positioned(
+                              left: -60.5,
+                              child: Obx(
+                                () => RPltWidget(
+                                  count: _ct.leftCnt.value,
+                                ),
+                              ),
                             ),
-                          ),
+                            Positioned(
+                              right: -60.5,
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Obx(
+                                  () => BPltWidget(
+                                    count: _ct.rightCnt.value,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Obx(
+                              () => CurPlt(
+                                type: _ct.curTp.value,
+                                callback: (event) async {
+                                  _ct.onEvent(event).then((value) {
+                                    if (_ct.lfs.value < 1) {
+                                      final val = Prefs.prefs!
+                                              .getStringList(getPrSt()) ??
+                                          [];
+                                      final min = int.parse(
+                                          (val.lastOrNull ?? ':0')
+                                              .split(':')
+                                              .last);
+                                      if (val.length < 15 ||
+                                          min < _ct.scr.value) {
+                                        if (val.length == 15) {
+                                          val.removeLast();
+                                        }
+                                        final date = DateFormat('dd.MM.yyyy')
+                                            .format(DateTime.now())
+                                            .toString();
+                                        val.add('$date:${_ct.scr.value}');
+                                        if (val.length > 1) {
+                                          val.sort((a, b) {
+                                            int av =
+                                                int.parse(a.split(':').last);
+                                            int bv =
+                                                int.parse(b.split(':').last);
+                                            return bv.compareTo(av);
+                                          });
+                                        }
+                                        Prefs.prefs!
+                                            .setStringList(getPrSt(), val);
+                                      }
+                                      timer!.cancel();
+                                      scoreDlg();
+                                    }
+                                  });
+                                },
+                              ),
+                            ),
+                          ],
                         ),
+                      ),
+                      Center(
+                        child: Obx(() {
+                          if (_ct.scrLbl.isNotEmpty) {
+                            Future.delayed(Duration(milliseconds: 150))
+                                .then((val) {
+                              _ct.scrLbl.value = '';
+                            });
+                          }
+                          return TextWithShadow(
+                            _ct.scrLbl.value.toUpperCase(),
+                            textSize: 32,
+                            color: Color.fromRGBO(255, 255, 255, 1),
+                            backColor: Color.fromRGBO(186, 85, 21, 1),
+                            borderColor: Color.fromRGBO(229, 107, 30, 1),
+                          );
+                        }),
                       ),
                     ],
                   ),
@@ -687,23 +739,9 @@ class _GmScrState extends State<GmScr> {
                       ),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          Center(
-                            child: Obx(
-                              () => TextWithShadow(
-                                _ct.scrLbl.value.toUpperCase(),
-                                textSize: 32,
-                                color: Color.fromRGBO(255, 255, 255, 1),
-                                backColor: Color.fromRGBO(186, 85, 21, 1),
-                                borderColor: Color.fromRGBO(229, 107, 30, 1),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 50,
-                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -742,17 +780,27 @@ class _GmScrState extends State<GmScr> {
                               ),
                               Visibility(
                                 visible: Prefs.prefs!.getBool('preB') ?? false,
-                                child: Obx(
-                                  () => Image.asset(
-                                    _ct.lfs < 4
-                                        ? 'assets/blh.png'
-                                        : 'assets/rh.png',
-                                    filterQuality: FilterQuality.high,
-                                    width: 48,
-                                  ),
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 24,
+                                    ),
+                                    Obx(
+                                      () => Image.asset(
+                                        _ct.lfs < 4
+                                            ? 'assets/blh.png'
+                                            : 'assets/rh.png',
+                                        filterQuality: FilterQuality.high,
+                                        width: 48,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
+                          ),
+                          const SizedBox(
+                            height: 24,
                           ),
                         ],
                       ),
@@ -770,106 +818,34 @@ class TimeTime extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        _tab(
-            Center(
-              child: TextWithShadow(
-                '0'.toUpperCase(),
-                textSize: 52,
-                color: Color.fromRGBO(255, 255, 255, 1),
-                backColor: Color.fromRGBO(21, 67, 186, 1),
-                borderColor: Color.fromRGBO(30, 74, 229, 1),
-              ),
-            ),
-            true),
-        SizedBox(
-          width: 4,
-        ),
-        _tab(
-            Center(
-              child: TextWithShadow(
-                '0'.toUpperCase(),
-                textSize: 52,
-                color: Color.fromRGBO(255, 255, 255, 1),
-                backColor: Color.fromRGBO(21, 67, 186, 1),
-                borderColor: Color.fromRGBO(30, 74, 229, 1),
-              ),
-            ),
-            false),
-        SizedBox(
-          width: 5,
-        ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+    return _tab(
+      Center(
+        child: Column(
           children: [
-            _dot(),
-            SizedBox(
-              height: 7,
+            TextWithShadow(
+              secs.toString().toUpperCase(),
+              textSize: 52,
+              color: Color.fromRGBO(255, 255, 255, 1),
+              backColor: Color.fromRGBO(21, 67, 186, 1),
+              borderColor: Color.fromRGBO(30, 74, 229, 1),
             ),
-            _dot()
+            TextWithShadow(
+              'seconds left',
+              textSize: 13,
+              color: Color.fromRGBO(255, 255, 255, 1),
+              backColor: Color.fromRGBO(0, 0, 0, 1),
+              borderColor: Color.fromRGBO(30, 74, 229, 1),
+            ),
           ],
-        ),
-        SizedBox(
-          width: 5,
-        ),
-        _tab(
-            Center(
-              child: TextWithShadow(
-                (secs ~/ 10).toString().toUpperCase(),
-                textSize: 52,
-                color: Color.fromRGBO(255, 255, 255, 1),
-                backColor: Color.fromRGBO(21, 67, 186, 1),
-                borderColor: Color.fromRGBO(30, 74, 229, 1),
-              ),
-            ),
-            true),
-        SizedBox(
-          width: 4,
-        ),
-        _tab(
-            Center(
-              child: TextWithShadow(
-                (secs % 10).toString().toUpperCase(),
-                textSize: 52,
-                color: Color.fromRGBO(255, 255, 255, 1),
-                backColor: Color.fromRGBO(21, 67, 186, 1),
-                borderColor: Color.fromRGBO(30, 74, 229, 1),
-              ),
-            ),
-            false),
-      ],
-    );
-  }
-
-  Widget _dot() {
-    return Container(
-      height: 14,
-      width: 14,
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-          color: Color.fromRGBO(234, 240, 254, 1),
-          shape: BoxShape.circle,
-          boxShadow: [
-            BoxShadow(
-                offset: Offset(0, 2), color: Color.fromRGBO(192, 202, 217, 1))
-          ]),
-      child: Container(
-        height: 12,
-        width: 12,
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          color: Color.fromRGBO(8, 90, 249, 1),
         ),
       ),
     );
   }
 
-  Widget _tab(Widget child, bool isLeft) {
+  Widget _tab(Widget child) {
     return Container(
       height: 95,
-      width: 72,
+      width: 156,
       padding: EdgeInsets.all(4),
       decoration: BoxDecoration(
         color: Color.fromRGBO(234, 240, 254, 1),
@@ -888,7 +864,7 @@ class TimeTime extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(8),
           child: CustomPaint(
-            foregroundPainter: OneTreshina(isLeft),
+            foregroundPainter: OneTreshina(true),
             child: Container(
               decoration: BoxDecoration(
                 color: Color.fromRGBO(49, 106, 254, 1),

@@ -56,7 +56,10 @@ class GmCtrl extends GetxController {
     scrLbl.value = '';
     curTp.value = _generatePlt();
 
-    return ('frrfejoiferjoiferjioferjoiefrjio', 'gfopfgpofgpkofgkopfgkopfgkpofgkpogkopgfkpofgkopfgkopfkopfgkopfgkop');
+    return (
+      'frrfejoiferjoiferjioferjoiefrjio',
+      'gfopfgpofgpkofgkopfgkopfgkpofgkpogkopgfkpofgkopfgkopfkopfgkopfgkop'
+    );
   }
 
   PltType _generatePlt() {
@@ -102,6 +105,7 @@ class GmCtrl extends GetxController {
       if (event != Event.down) {
         lfs.value = 0;
       }
+      scrLbl.value = '';
     }
     int foofdoffdodfp = 10;
     for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
@@ -136,6 +140,7 @@ class GmCtrl extends GetxController {
         scrLbl.value = '+ 2';
         leftCnt.value += 1;
       } else {
+        scrLbl.value = '';
         lfs.value -= 1;
       }
     }
@@ -145,6 +150,7 @@ class GmCtrl extends GetxController {
         scrLbl.value = '+ 2';
         rightCnt.value += 1;
       } else {
+        scrLbl.value = '';
         lfs.value -= 1;
       }
     }
@@ -158,7 +164,9 @@ class GmCtrl extends GetxController {
       if (event == Event.tap) {
         scr.value += 1;
         scrLbl.value = '+ 1';
+      
       } else {
+        scrLbl.value = '';
         lfs.value -= 1;
       }
     }

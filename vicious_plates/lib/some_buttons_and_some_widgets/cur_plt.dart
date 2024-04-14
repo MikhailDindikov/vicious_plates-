@@ -4,7 +4,7 @@ import 'package:vicious_plates/ctrls/gm_ctrl.dart';
 
 class CurPlt extends StatefulWidget {
   final PltType type;
-  final Function(Event event) callback;
+  final Future<void> Function(Event event) callback;
   const CurPlt({required this.type, required this.callback, super.key});
 
   @override
@@ -114,8 +114,8 @@ class _CurPltState extends State<CurPlt> with TickerProviderStateMixin {
       });
 
       _animDown = Tween<double>(
-        begin: 231/2-62.5,
-        end: 231+62.5,
+        begin: 231 / 2 - 62.5,
+        end: 231 + 62.5,
       ).animate(ctrDown);
       _animDown.addListener(() {
         if (!_animDown.isCompleted && ctrDown.isAnimating) {
@@ -166,22 +166,21 @@ class _CurPltState extends State<CurPlt> with TickerProviderStateMixin {
             onHorizontalDragStart: (details) {
               start = details.globalPosition;
             },
-            onHorizontalDragUpdate: (details) {
+            onHorizontalDragUpdate: (details) async {
               if (!hasSelected) {
                 if (start.dx - details.globalPosition.dx > 20) {
+                  await widget.callback(Event.left);
                   ctrLeft.forward();
-                  widget.callback(Event.left);
                   hasSelected = true;
                 }
                 if (start.dx - details.globalPosition.dx < -20) {
+                  await widget.callback(Event.right);
                   ctrRight.forward();
-                  widget.callback(Event.right);
                   hasSelected = true;
                 }
                 if (start.dy - details.globalPosition.dy < -20) {
+                  await widget.callback(Event.down);
                   ctrDown.forward();
-                  print(Get.height);
-                  widget.callback(Event.down);
                   hasSelected = true;
                 }
               }
@@ -192,9 +191,9 @@ class _CurPltState extends State<CurPlt> with TickerProviderStateMixin {
             },
             onTap: () async {
               if (!_tpd.value) {
+                await widget.callback(Event.tap);
                 _tpd.value = true;
-                widget.callback(Event.tap);
-                await Future.delayed(const Duration(milliseconds: 300));
+                await Future.delayed(const Duration(milliseconds: 200));
                 _tpd.value = false;
               }
             },

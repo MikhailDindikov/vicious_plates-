@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:apphud/apphud.dart';
@@ -32,8 +33,7 @@ class _GlavniScreenState extends State<GlavniScreen> {
   final RxBool preLo = false.obs;
   final c = Get.put(HoCo());
 
-  
-int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
+  int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
     var dfdfvdfvdfvdfa = '';
     dfdfvdfvdfvdfa = 'asfasdf,sdl;fs;d';
     int foofdoffdodfp = 10;
@@ -126,6 +126,8 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                                 Image.asset(
                                   'assets/msc.png',
                                   filterQuality: FilterQuality.high,
+                                  height: 50,
+                                  width: 50,
                                 ),
                                 Obx(
                                   () => Visibility(
@@ -135,10 +137,9 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                                         transform: Matrix4.identity()
                                           ..rotateZ(45 * 3.14159265 / 180),
                                         child: Container(
-                                          height: 46,
+                                          height: 50,
                                           width: 4,
-                                          color:
-                                              Color.fromRGBO(234, 240, 254, 1),
+                                          color: Color.fromRGBO(255, 0, 0, 1),
                                         ),
                                       )),
                                 ),
@@ -197,7 +198,8 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                         recDlg(
                             Prefs.prefs!.getStringList('15sec') ?? [],
                             Prefs.prefs!.getStringList('30sec') ?? [],
-                            Prefs.prefs!.getStringList('60sec') ?? []);
+                            Prefs.prefs!.getStringList('60sec') ?? [],
+                            Prefs.prefs!.getStringList('120sec') ?? []);
                       },
                       child: SomeButtomOnSomeScreen(
                         color: Color.fromRGBO(49, 106, 254, 1),
@@ -580,7 +582,20 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                   color: Color.fromRGBO(234, 240, 254, 1),
                   shadowColor: Color.fromRGBO(192, 202, 217, 1)),
               SizedBox(
-                height: 32,
+                height: 16,
+              ),
+              SomeButWithoutTreshina(
+                  child: TextWithShadow(
+                    '120 sec mode'.toUpperCase(),
+                    textSize: 16,
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    backColor: Color.fromRGBO(21, 67, 186, 1),
+                    borderColor: Color.fromRGBO(30, 74, 229, 1),
+                  ),
+                  color: Color.fromRGBO(234, 240, 254, 1),
+                  shadowColor: Color.fromRGBO(192, 202, 217, 1)),
+              SizedBox(
+                height: 100,
               ),
               GestureDetector(
                 onTap: () async {
@@ -639,46 +654,6 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                 height: 16,
               ),
               GestureDetector(
-                onTap: () {
-                  Get.back();
-                  Get.to(() => PoliSc());
-                },
-                child: SomeButtomOnSomeScreen(
-                  color: Color.fromRGBO(49, 106, 254, 1),
-                  shadowColor: Color.fromRGBO(8, 90, 249, 1),
-                  child: TextWithShadow(
-                    'Privacy Policy'.toUpperCase(),
-                    textSize: 16,
-                    color: Color.fromRGBO(255, 255, 255, 1),
-                    backColor: Color.fromRGBO(21, 67, 186, 1),
-                    borderColor: Color.fromRGBO(30, 74, 229, 1),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              GestureDetector(
-                onTap: () {
-                  Get.back();
-                  Get.to(() => TerSc());
-                },
-                child: SomeButtomOnSomeScreen(
-                  color: Color.fromRGBO(49, 106, 254, 1),
-                  shadowColor: Color.fromRGBO(8, 90, 249, 1),
-                  child: TextWithShadow(
-                    'Terms of Use'.toUpperCase(),
-                    textSize: 16,
-                    color: Color.fromRGBO(255, 255, 255, 1),
-                    backColor: Color.fromRGBO(21, 67, 186, 1),
-                    borderColor: Color.fromRGBO(30, 74, 229, 1),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              GestureDetector(
                 onTap: () async {
                   bool hPr = Prefs.prefs!.getBool("preB") ?? false;
                   if (hPr) {
@@ -688,7 +663,7 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                     final prea = await Apphud.hasPremiumAccess();
                     final sup = await Apphud.hasActiveSubscription();
                     if (prea || sup) {
-                      await Prefs.prefs!.setBool("preB", true);
+                      await Prefs.prefs!.setBool('preB', true);
                       Get.back();
                       reSuDlg();
                     } else {
@@ -863,7 +838,7 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
         child: Material(
           color: Colors.transparent,
           child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16),
+            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
             padding: EdgeInsets.all(4),
             decoration: BoxDecoration(
               color: Color.fromRGBO(254, 242, 234, 1),
@@ -912,8 +887,8 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            _pltInfo('assets/wp.png', '60%'),
-                            _pltInfo('assets/rp.png', '15%'),
+                            _pltInfo('assets/wp.png', 'TAP\n'),
+                            _pltInfo('assets/rp.png', 'SWIPE\nLEFT'),
                           ],
                         ),
                         SizedBox(
@@ -922,39 +897,26 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            _pltInfo('assets/bp.png', '15%'),
-                            _pltInfo('assets/blp.png', '10%'),
+                            _pltInfo('assets/bp.png', 'SWIPE\nRIGHT'),
+                            _pltInfo('assets/blp.png', 'SWIPE\nDOWN'),
                           ],
                         ),
                       ],
                     ),
                   ),
                   SizedBox(
-                    height: 48,
+                    height: 82,
                   ),
                   Center(
-                    child: Column(
-                      children: [
-                        TextWithShadow(
-                          'As fast as possible:'.toUpperCase(),
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                          backColor: Color.fromRGBO(0, 0, 0, 1),
-                          borderColor: Color.fromRGBO(0, 0, 0, 1),
-                        ),
-                        SizedBox(
-                          height: 24,
-                        ),
-                        Text(
-                          'Smash white plates\nSwipe left red plates\nSwipe right blue plates\nBeware and swipe down black plates\nKeep track of time and lives.',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontFamily: 'Gil',
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            color: Color.fromRGBO(0, 0, 0, 1),
-                          ),
-                        ),
-                      ],
+                    child: Text(
+                      'Properly distribute the plates\nto avoid losing hearts',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: 'Gil',
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                        color: Color.fromRGBO(0, 0, 0, 1),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -969,7 +931,8 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
     );
   }
 
-  void recDlg(List<String> sec15, List<String> sec30, List<String> sec60) {
+  void recDlg(List<String> sec15, List<String> sec30, List<String> sec60,
+      List<String> sec120) {
     RxInt selected = 0.obs;
     showDialog(
       context: context,
@@ -980,7 +943,9 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
             borderRadius: BorderRadius.circular(12),
             child: Material(
               color: Colors.transparent,
+              borderRadius: BorderRadius.circular(12),
               child: Container(
+                clipBehavior: Clip.hardEdge,
                 margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(247, 237, 231, 1),
@@ -997,6 +962,7 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                     Stack(
                       children: [
                         Container(
+                          clipBehavior: Clip.hardEdge,
                           decoration: BoxDecoration(
                             color: Color.fromRGBO(32, 76, 190, 1),
                             borderRadius: BorderRadius.circular(12),
@@ -1010,94 +976,151 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                             ],
                           ),
                           child: IntrinsicHeight(
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Expanded(
-                                    child: GestureDetector(
-                                  onTap: () {
-                                    selected.value = 0;
-                                  },
-                                  child: Obx(
-                                    () => Container(
-                                      padding:
-                                          EdgeInsets.only(bottom: 13, top: 76),
-                                      alignment: Alignment.bottomCenter,
-                                      decoration: BoxDecoration(
-                                          color: selected.value == 0
-                                              ? Color.fromRGBO(0, 0, 0, 0.33)
-                                              : null),
-                                      child: TextWithShadow(
-                                        '15 sec'.toUpperCase(),
-                                        color: Color.fromRGBO(255, 255, 255, 1),
-                                        backColor:
-                                            Color.fromRGBO(21, 67, 186, 1),
-                                        borderColor:
-                                            Color.fromRGBO(30, 74, 229, 1),
+                            child: ClipRRect(
+                              clipBehavior: Clip.hardEdge,
+                              borderRadius: BorderRadius.circular(12),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  Expanded(
+                                      child: GestureDetector(
+                                    onTap: () {
+                                      selected.value = 0;
+                                    },
+                                    child: Obx(
+                                      () => Container(
+                                        padding: EdgeInsets.only(
+                                            bottom: 13, top: 76),
+                                        alignment: Alignment.bottomCenter,
+                                        decoration: BoxDecoration(
+                                            color: selected.value == 0
+                                                ? Color.fromRGBO(0, 0, 0, 0.33)
+                                                : null),
+                                        child: TextWithShadow(
+                                          '15\nsec'.toUpperCase(),
+                                          color:
+                                              Color.fromRGBO(255, 255, 255, 1),
+                                          backColor:
+                                              Color.fromRGBO(21, 67, 186, 1),
+                                          borderColor:
+                                              Color.fromRGBO(30, 74, 229, 1),
+                                        ),
                                       ),
                                     ),
+                                  )),
+                                  Container(
+                                    width: 1,
+                                    color: Color.fromRGBO(0, 0, 0, 1),
                                   ),
-                                )),
-                                Container(
-                                  width: 1,
-                                  color: Color.fromRGBO(0, 0, 0, 1),
-                                ),
-                                Expanded(
-                                    child: GestureDetector(
-                                  onTap: () {
-                                    selected.value = 1;
-                                  },
-                                  child: Obx(
-                                    () => Container(
-                                      padding:
-                                          EdgeInsets.only(bottom: 13, top: 76),
-                                      alignment: Alignment.bottomCenter,
-                                      decoration: BoxDecoration(
-                                          color: selected.value == 1
-                                              ? Color.fromRGBO(0, 0, 0, 0.33)
-                                              : null),
-                                      child: TextWithShadow(
-                                        '30 sec'.toUpperCase(),
-                                        color: Color.fromRGBO(255, 255, 255, 1),
-                                        backColor:
-                                            Color.fromRGBO(21, 67, 186, 1),
-                                        borderColor:
-                                            Color.fromRGBO(30, 74, 229, 1),
+                                  Expanded(
+                                      child: GestureDetector(
+                                    onTap: () {
+                                      selected.value = 1;
+                                    },
+                                    child: Obx(
+                                      () => Container(
+                                        padding: EdgeInsets.only(
+                                            bottom: 13, top: 76),
+                                        alignment: Alignment.bottomCenter,
+                                        decoration: BoxDecoration(
+                                            color: selected.value == 1
+                                                ? Color.fromRGBO(0, 0, 0, 0.33)
+                                                : null),
+                                        child: TextWithShadow(
+                                          '30\nsec'.toUpperCase(),
+                                          color:
+                                              Color.fromRGBO(255, 255, 255, 1),
+                                          backColor:
+                                              Color.fromRGBO(21, 67, 186, 1),
+                                          borderColor:
+                                              Color.fromRGBO(30, 74, 229, 1),
+                                        ),
                                       ),
                                     ),
+                                  )),
+                                  Container(
+                                    width: 1,
+                                    color: Color.fromRGBO(0, 0, 0, 1),
                                   ),
-                                )),
-                                Container(
-                                  width: 1,
-                                  color: Color.fromRGBO(0, 0, 0, 1),
-                                ),
-                                Expanded(
-                                    child: GestureDetector(
-                                  onTap: () {
-                                    selected.value = 2;
-                                  },
-                                  child: Obx(
-                                    () => Container(
-                                      padding:
-                                          EdgeInsets.only(bottom: 13, top: 76),
-                                      alignment: Alignment.bottomCenter,
-                                      decoration: BoxDecoration(
-                                          color: selected.value == 2
-                                              ? Color.fromRGBO(0, 0, 0, 0.33)
-                                              : null),
-                                      child: TextWithShadow(
-                                        '60 sec'.toUpperCase(),
-                                        color: Color.fromRGBO(255, 255, 255, 1),
-                                        backColor:
-                                            Color.fromRGBO(21, 67, 186, 1),
-                                        borderColor:
-                                            Color.fromRGBO(30, 74, 229, 1),
+                                  Expanded(
+                                      child: GestureDetector(
+                                    onTap: () {
+                                      selected.value = 2;
+                                    },
+                                    child: Obx(
+                                      () => Container(
+                                        padding: EdgeInsets.only(
+                                            bottom: 13, top: 76),
+                                        alignment: Alignment.bottomCenter,
+                                        decoration: BoxDecoration(
+                                            color: selected.value == 2
+                                                ? Color.fromRGBO(0, 0, 0, 0.33)
+                                                : null),
+                                        child: TextWithShadow(
+                                          '60\nsec'.toUpperCase(),
+                                          color:
+                                              Color.fromRGBO(255, 255, 255, 1),
+                                          backColor:
+                                              Color.fromRGBO(21, 67, 186, 1),
+                                          borderColor:
+                                              Color.fromRGBO(30, 74, 229, 1),
+                                        ),
                                       ),
                                     ),
+                                  )),
+                                  Container(
+                                    width: 1,
+                                    color: Color.fromRGBO(0, 0, 0, 1),
                                   ),
-                                )),
-                              ],
+                                  Expanded(
+                                      child: GestureDetector(
+                                    onTap: () {
+                                      if (Prefs.prefs!.getBool('preB') ??
+                                          false) {
+                                        selected.value = 3;
+                                      }
+                                    },
+                                    child: Obx(
+                                      () => Container(
+                                        padding: EdgeInsets.only(
+                                            bottom: 13, top: 76),
+                                        alignment: Alignment.bottomCenter,
+                                        decoration: BoxDecoration(
+                                            color: !(Prefs.prefs!
+                                                            .getBool('preB') ??
+                                                        false)
+                                                    .obs
+                                                    .value
+                                                ? Color.fromRGBO(
+                                                    134, 134, 134, 1)
+                                                : selected.value == 3
+                                                    ? Color.fromRGBO(
+                                                        0, 0, 0, 0.33)
+                                                    : null),
+                                        child: TextWithShadow(
+                                          '120\nsec'.toUpperCase(),
+                                          color:
+                                              Color.fromRGBO(255, 255, 255, 1),
+                                          backColor: !(Prefs.prefs!
+                                                          .getBool('preB') ??
+                                                      false)
+                                                  .obs
+                                                  .value
+                                              ? Color.fromRGBO(93, 93, 93, 1)
+                                              : Color.fromRGBO(21, 67, 186, 1),
+                                          borderColor: !(Prefs.prefs!
+                                                          .getBool('preB') ??
+                                                      false)
+                                                  .obs
+                                                  .value
+                                              ? Color.fromRGBO(101, 101, 101, 1)
+                                              : Color.fromRGBO(30, 74, 229, 1),
+                                        ),
+                                      ),
+                                    ),
+                                  )),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -1189,7 +1212,11 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                                                     sec30.isNotEmpty.obs
                                                         .value) ||
                                                 (selected.value == 2 &&
-                                                    sec60.isNotEmpty.obs.value),
+                                                    sec60.isNotEmpty.obs
+                                                        .value) ||
+                                                (selected.value == 3 &&
+                                                    sec120
+                                                        .isNotEmpty.obs.value),
                                             child: TextWithShadow(
                                               selected.value == 0 &&
                                                       sec15.length > index
@@ -1203,7 +1230,13 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                                                                   index
                                                           ? sec60[index]
                                                               .split(':')[0]
-                                                          : ''.toString(),
+                                                          : selected.value ==
+                                                                      3 &&
+                                                                  sec120.length >
+                                                                      index
+                                                              ? sec120[index]
+                                                                  .split(':')[0]
+                                                              : ''.toString(),
                                               color: Colors.white,
                                               backColor:
                                                   Color.fromRGBO(0, 0, 0, 1),
@@ -1225,7 +1258,12 @@ int sdflksdfjksdksdkfkmldfgasfgkgjmdgmksdmkdfkjjkfgkjldjkldfgkjldfgkj() {
                                                 : selected.value == 2 &&
                                                         sec60.length > index
                                                     ? sec60[index].split(':')[1]
-                                                    : ''.toString(),
+                                                    : selected.value == 3 &&
+                                                            sec120.length >
+                                                                index
+                                                        ? sec120[index]
+                                                            .split(':')[1]
+                                                        : ''.toString(),
                                         color: Colors.white,
                                         backColor: Color.fromRGBO(0, 0, 0, 1),
                                         borderColor: Color.fromRGBO(0, 0, 0, 1),

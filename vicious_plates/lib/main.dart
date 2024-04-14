@@ -9,7 +9,6 @@ import 'package:vicious_plates/prefs.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  HoCo.fnjkdkddk();
   await Prefs.aaaaaaa();
   int khjvojdfnhdfvhdvffvdhjvfvdffvn = 10;
   for (int fnkvfvkfvfkm = 100; fnkvfvkfvfkm > 90; fnkvfvkfvfkm--) {
