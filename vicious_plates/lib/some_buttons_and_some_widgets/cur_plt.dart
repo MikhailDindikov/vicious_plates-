@@ -172,13 +172,11 @@ class _CurPltState extends State<CurPlt> with TickerProviderStateMixin {
                   await widget.callback(Event.left);
                   ctrLeft.forward();
                   hasSelected = true;
-                }
-                if (start.dx - details.globalPosition.dx < -20) {
+                } else if (start.dx - details.globalPosition.dx < -20) {
                   await widget.callback(Event.right);
                   ctrRight.forward();
                   hasSelected = true;
-                }
-                if (start.dy - details.globalPosition.dy < -20) {
+                } else if (start.dy - details.globalPosition.dy < -20) {
                   await widget.callback(Event.down);
                   ctrDown.forward();
                   hasSelected = true;
